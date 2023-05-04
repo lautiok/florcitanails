@@ -405,6 +405,7 @@ footer h3 a:hover {
         width: 100%;
         height: 100vh;
         right: 0;
+        z-index: 3;
     }
 
     header nav ul li {
