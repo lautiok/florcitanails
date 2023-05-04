@@ -18,8 +18,6 @@
 /*-----------------HEADER--------------------*/
 header .barra-notificaciones {
     background-color: #fe9a9a;
-    left: 0;
-    right: 0;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -33,10 +31,6 @@ header .barra-notificaciones a {
 }
 
 header nav {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    background-color: #ffffff;
-    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,6 +61,8 @@ header nav ul li {
 header nav a {
     display: block;
     padding: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
     color: #000000;
     transition: 0.5s;
 }
@@ -78,7 +74,6 @@ header nav a:hover {
 /*-----------------MAIN----------------------*/
 .foto-principal {
     background-image: url(../img/nails.png);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
