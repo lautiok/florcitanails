@@ -162,3 +162,46 @@ footer {
     transition: 0.4s; }
     footer h3 a:hover {
       color: #000000; }
+
+@media screen and (max-width: 1629px) {
+  .informacion-profesional {
+    flex-direction: column;
+    padding: 20px; }
+    .informacion-profesional .tex-informacion {
+      padding: 20px; } }
+
+@media screen and (max-width: 800px) {
+  header nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px; }
+    header nav img {
+      width: 100px;
+      right: 100px; }
+    header nav .checkbtn {
+      display: block; }
+    header nav .bi, header nav .bi-list {
+      display: flex; }
+    header nav #check:checked ~ ul {
+      left: 0; }
+    header nav ul {
+      display: block;
+      position: fixed;
+      top: 0px;
+      left: -100%;
+      background: #fe9a9a;
+      width: 100%;
+      height: 100vh;
+      right: 0;
+      z-index: 3; }
+      header nav ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0; }
+        header nav ul li a:hover {
+          color: #ffffff; } }
+
+@media screen and (max-width: 633px) {
+  .foto-principal {
+    margin: 10px; } }
