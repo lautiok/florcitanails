@@ -262,10 +262,12 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 40px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .Iniciar-seccion button {
     background-color: #fe9a9a;
+    color: #ffffff;
 }
 
 .contacto-pagina {

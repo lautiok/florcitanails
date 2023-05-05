@@ -1,0 +1,47 @@
+header{
+    .barra-notificaciones {
+        background-color: #fe9a9a;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    }
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        label {
+            color: #000000;
+            font-size: 30px;
+        }
+        .ocult, #check {
+            display: none;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li {
+                margin: 0;
+                padding: 0;
+                a {
+                    display: block;
+                    padding: 16px;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 700;
+                    color: #000000;
+                    transition: 0.5s;
+                    &:hover {
+                        color: #fe9a9a;
+                    }
+                }
+            }
+        }
+    }
+}

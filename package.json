@@ -1,0 +1,18 @@
+{
+  "name": "sitio-florcitanails",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hola mi proyecto es Florcitanails</h1>\r <h3 align=\"center\">Florcitanails es una pagina de diseños de uñas en acrilico y esmaltado donde buscamos con nuestro sitio web dar a conocer nuestros servicios</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
+

@@ -1,0 +1,32 @@
+footer { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fe9a9a;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    padding: 50px 0;
+    .logo-footer {
+        max-width: 100px;
+    }
+    .redessociales-footer {
+        margin: 20px 0;
+        img{
+            max-width: 40px;
+            margin: 0 10px;
+        }
+    }
+    h3{
+        a{
+            color: white;
+            font-size: 16px;
+            margin: 0;
+            transition: 0.4s;
+            &:hover{
+                color: #000000;
+            }
+        }
+    }
+}
