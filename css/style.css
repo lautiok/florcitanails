@@ -320,11 +320,14 @@ header nav a:hover {
 
 /*-----------------FOOTER----------------------*/
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #fe9a9a;
     color: #fff;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
-    text-align: center;
     padding: 50px 0;
 }
 
