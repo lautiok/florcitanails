@@ -8,6 +8,7 @@
   * a {
     text-decoration: none; }
 
+/*----------PALETA DE COLOR----------*/
 header .barra-notificaciones {
   background-color: #fe9a9a;
   height: 40px;
@@ -46,7 +47,7 @@ header nav {
         header nav ul li a:hover {
           color: #fe9a9a; }
 
-.foto-principal {
+main .foto-principal {
   background-image: url(../img/nails.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,15 +59,15 @@ header nav {
   margin-right: 70px;
   margin-left: 70px;
   border-radius: 15px; }
-  .foto-principal h1 {
+  main .foto-principal h1 {
     font-family: "Open Sans", sans-serif;
     color: white;
     margin: 0;
     font-size: 48px;
     text-align: center; }
-  .foto-principal .botton-principal {
+  main .foto-principal .botton-principal {
     margin-top: 16px; }
-    .foto-principal .botton-principal a {
+    main .foto-principal .botton-principal a {
       font-family: "Open Sans", sans-serif;
       display: inline-block;
       padding: 16px 32px;
@@ -75,12 +76,12 @@ header nav {
       font-size: 19px;
       border-radius: 5px; }
 
-.servicios {
+main .servicios {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center; }
-  .servicios .servicios-card {
+  main .servicios .servicios-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,18 +91,18 @@ header nav {
     border-radius: 5px;
     padding: 30px;
     margin: 20px; }
-    .servicios .servicios-card img {
+    main .servicios .servicios-card img {
       width: 100%;
       height: 300px;
       margin-bottom: 10px;
       border-radius: 10px; }
-    .servicios .servicios-card h3 {
+    main .servicios .servicios-card h3 {
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
       margin: 0;
       margin-bottom: 10px;
       text-align: center; }
-    .servicios .servicios-card a {
+    main .servicios .servicios-card a {
       background-color: #fe9a9a;
       color: #fff;
       border: none;
@@ -111,7 +112,7 @@ header nav {
       font-size: 20px;
       font-weight: bold; }
 
-.informacion-profesional {
+main .informacion-profesional {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,24 +120,184 @@ header nav {
   padding-right: 500px;
   padding-bottom: 30px;
   padding-top: 50px; }
-  .informacion-profesional img {
+  main .informacion-profesional img {
     margin-left: 10px;
     max-width: 100%;
     box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
-  .informacion-profesional .tex-informacion {
+  main .informacion-profesional .tex-informacion {
     text-align: center;
     font-family: "Open Sans", sans-serif; }
-    .informacion-profesional .tex-informacion p {
+    main .informacion-profesional .tex-informacion p {
       color: #fe9a9a; }
-    .informacion-profesional .tex-informacion a {
+
+/*----------Pagina Servicios----------*/
+main .servicios-pagina h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  main .servicios-pagina h1 span {
+    color: #fe9a9a; }
+
+main .servicios-pag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center; }
+  main .servicios-pag .servicios-card-pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 20px; }
+    main .servicios-pag .servicios-card-pagina img {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 10px;
+      border-radius: 10px; }
+    main .servicios-pag .servicios-card-pagina h3 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: center; }
+    main .servicios-pag .servicios-card-pagina a {
+      background-color: #fe9a9a;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: bold; }
+
+/*----------Pagina Galeria----------*/
+main .galeria-pag h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif; }
+  main .galeria-pag h1 span {
+    color: #fe9a9a; }
+
+main .carrussel {
+  padding: 40px; }
+
+main .conteiner-img {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px; }
+  main .conteiner-img .box-img {
+    width: 100%;
+    height: 100%; }
+    main .conteiner-img .box-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .conteiner-img .box-img:nth-child(1) {
+      grid-column-start: span 2; }
+    main .conteiner-img .box-img:nth-child(4) {
+      grid-row-start: span 2; }
+
+/*-----Pagina cursos-----*/
+main .cursos-pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif; }
+  main .cursos-pagina span {
+    color: #fe9a9a; }
+
+main .iniciar-seccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: "Open Sans", sans-serif; }
+  main .iniciar-seccion button {
+    background-color: #fe9a9a;
+    color: #ffffff; }
+
+/*-----Pagina Contacto-----*/
+main .contacto-pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif; }
+  main .contacto-pagina span {
+    color: #fe9a9a; }
+
+main .informacion-pagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 300px;
+  padding-right: 500px;
+  padding-bottom: 30px;
+  padding-top: 50px; }
+  main .informacion-pagina img {
+    margin-left: 10px;
+    max-width: 100%;
+    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
+  main .informacion-pagina .tex-informacion {
+    text-align: center;
+    font-family: "Open Sans", sans-serif; }
+    main .informacion-pagina .tex-informacion p {
+      color: #fe9a9a; }
+    main .informacion-pagina .tex-informacion a {
       display: inline-block;
       padding: 16px 32px;
       background-color: #fe9a9a;
       color: white;
       font-size: 19px;
       border-radius: 5px; }
+
+main .mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; }
+
+main .ubicacion-contacto {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px; }
+  main .ubicacion-contacto i {
+    color: #000000;
+    font-size: 50px;
+    transition: 0.3s; }
+    main .ubicacion-contacto i:hover {
+      color: #fe9a9a; }
+  main .ubicacion-contacto .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s; }
+    main .ubicacion-contacto .item p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px; }
+
+main .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px; }
 
 footer {
   display: flex;
@@ -164,23 +325,32 @@ footer {
       color: #000000; }
 
 @media screen and (max-width: 1629px) {
-  .informacion-profesional {
+  /*-----Informacion Profesional-----*/
+  main .informacion-profesional {
     flex-direction: column;
     padding: 20px; }
-    .informacion-profesional .tex-informacion {
+    main .informacion-profesional .tex-informacion {
+      padding: 20px; }
+  /*-----informacion-pagina-----*/
+  main .informacion-pagina {
+    flex-direction: column;
+    padding: 20px; }
+    main .informacion-pagina .tex-informacion {
       padding: 20px; } }
 
 @media screen and (max-width: 800px) {
+  /*-----HEADER-----*/
   header nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px; }
-    header nav img {
+    header nav a img {
       width: 100px;
       right: 100px; }
     header nav .checkbtn {
       display: block; }
-    header nav .bi, header nav .bi-list {
+    header nav .bi,
+    header nav .bi-list {
       display: flex; }
     header nav #check:checked ~ ul {
       left: 0; }
@@ -199,9 +369,44 @@ footer {
         display: flex;
         justify-content: center;
         margin: 0; }
-        header nav ul li a:hover {
-          color: #ffffff; } }
+        header nav ul li a {
+          color: black; }
+          header nav ul li a:hover {
+            color: white; }
+  /*Carrusel de pagina Galeria*/
+  main .carrussel {
+    padding: 5px; }
+  /*-----Galeria con grid-----*/
+  main .conteiner-img {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-rows: 200px; }
+    main .conteiner-img .box-img:nth-child(1) {
+      grid-column-start: span 1; }
+  /*-----informacion-pagina-----*/
+  main .mapa {
+    padding: 10px; }
+  main .ubicacion-contacto i {
+    padding: 30px; } }
+
+@media screen and (max-width: 771px) {
+  /*-----informacion-pagina-----*/
+  main .ubicacion-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 70px; } }
 
 @media screen and (max-width: 633px) {
-  .foto-principal {
+  /*-----Foto Principal-----*/
+  main .foto-principal {
     margin: 10px; } }
+
+@media screen and (max-width: 500px) {
+  /*-----Galeria con grid-----*/
+  main .conteiner-img {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr); }
+    main .conteiner-img .box-img {
+      height: 200px; } }

@@ -1,6 +1,6 @@
 header{
     .barra-notificaciones {
-        background-color: #fe9a9a;
+        background-color: $color-principal;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@ header{
                     color: #000000;
                     transition: 0.5s;
                     &:hover {
-                        color: #fe9a9a;
+                        color: $color-principal;
                     }
                 }
             }
