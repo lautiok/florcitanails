@@ -1,5 +1,4 @@
 @media screen and (max-width: 1629px) {
-    /*-----Informacion Profesional-----*/
     main .informacion-profesional {
         flex-direction: column;
         padding: 20px;
@@ -7,7 +6,6 @@
             padding: 20px;
         }
     }
-    /*-----informacion-pagina-----*/
     main .informacion-pagina {
         flex-direction: column;
         padding: 20px;
@@ -16,8 +14,12 @@
         }
     }
 }
+@media screen and (max-width: 979px) {
+    main .card-curso {
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 800px) {
-    /*-----HEADER-----*/
     header nav {
         flex-direction: row;
         justify-content: space-between;
@@ -62,11 +64,9 @@
             }
         }
     }
-    /*Carrusel de pagina Galeria*/
     main .carrussel {
         padding: 5px;
     }
-    /*-----Galeria con grid-----*/
     main .conteiner-img {
         width: 95%;
         grid-template-columns: repeat(2, 1fr);
@@ -76,7 +76,9 @@
             grid-column-start: span 1;
         }
     }
-    /*-----informacion-pagina-----*/
+    main .carrusel-cursos {
+        padding: 5px;
+    }
     main .mapa {
         padding: 10px;
     }
@@ -86,7 +88,6 @@
 }
 
 @media screen and (max-width: 771px) {
-    /*-----informacion-pagina-----*/
 main .ubicacion-contacto {
     display: flex;
     flex-direction: column;
@@ -96,14 +97,12 @@ main .ubicacion-contacto {
 }
 
 @media screen and (max-width: 633px) {
-    /*-----Foto Principal-----*/
     main .foto-principal {
         margin: 10px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    /*-----Galeria con grid-----*/
     main .conteiner-img {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);

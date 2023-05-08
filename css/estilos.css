@@ -223,13 +223,51 @@ main .carrusel-cursos {
 
 main .informacion-curso {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center; }
+  main .informacion-curso h2 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center; }
+    main .informacion-curso h2 span {
+      color: #fe9a9a; }
+  main .informacion-curso .card-curso {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px; }
+    main .informacion-curso .card-curso a {
+      background-color: #fe9a9a;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 17px;
+      font-weight: bold; }
+
+main .plataforma {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center; }
-  main .informacion-curso a {
-    background-color: #fe9a9a; }
-    main .informacion-curso a:hover {
-      background-color: #000000; }
+  padding: 80px;
+  font-family: "Open Sans", sans-serif; }
+  main .plataforma h2 {
+    color: #000000;
+    text-align: center; }
+  main .plataforma p {
+    color: #fe9a9a;
+    text-align: center; }
+  main .plataforma a {
+    background-color: #fe9a9a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold; }
 
 main .cursos-pagina {
   display: flex;
@@ -342,21 +380,22 @@ footer {
       color: #000000; }
 
 @media screen and (max-width: 1629px) {
-  /*-----Informacion Profesional-----*/
   main .informacion-profesional {
     flex-direction: column;
     padding: 20px; }
     main .informacion-profesional .tex-informacion {
       padding: 20px; }
-  /*-----informacion-pagina-----*/
   main .informacion-pagina {
     flex-direction: column;
     padding: 20px; }
     main .informacion-pagina .tex-informacion {
       padding: 20px; } }
 
+@media screen and (max-width: 979px) {
+  main .card-curso {
+    flex-direction: column; } }
+
 @media screen and (max-width: 800px) {
-  /*-----HEADER-----*/
   header nav {
     flex-direction: row;
     justify-content: space-between;
@@ -390,10 +429,8 @@ footer {
           color: black; }
           header nav ul li a:hover {
             color: white; }
-  /*Carrusel de pagina Galeria*/
   main .carrussel {
     padding: 5px; }
-  /*-----Galeria con grid-----*/
   main .conteiner-img {
     width: 95%;
     grid-template-columns: repeat(2, 1fr);
@@ -401,14 +438,14 @@ footer {
     grid-template-rows: 200px; }
     main .conteiner-img .box-img:nth-child(1) {
       grid-column-start: span 1; }
-  /*-----informacion-pagina-----*/
+  main .carrusel-cursos {
+    padding: 5px; }
   main .mapa {
     padding: 10px; }
   main .ubicacion-contacto i {
     padding: 30px; } }
 
 @media screen and (max-width: 771px) {
-  /*-----informacion-pagina-----*/
   main .ubicacion-contacto {
     display: flex;
     flex-direction: column;
@@ -416,12 +453,10 @@ footer {
     margin-top: 70px; } }
 
 @media screen and (max-width: 633px) {
-  /*-----Foto Principal-----*/
   main .foto-principal {
     margin: 10px; } }
 
 @media screen and (max-width: 500px) {
-  /*-----Galeria con grid-----*/
   main .conteiner-img {
     width: 90%;
     grid-template-columns: repeat(1, 1fr); }
