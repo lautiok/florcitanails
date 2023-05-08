@@ -210,6 +210,27 @@ main .conteiner-img {
     main .conteiner-img .box-img:nth-child(4) {
       grid-row-start: span 2; }
 
+main .curso-pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif; }
+  main .curso-pagina span {
+    color: #fe9a9a; }
+
+main .carrusel-cursos {
+  padding: 50px; }
+
+main .informacion-curso {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; }
+  main .informacion-curso a {
+    background-color: #fe9a9a; }
+    main .informacion-curso a:hover {
+      background-color: #000000; }
+
 main .cursos-pagina {
   display: flex;
   justify-content: center;

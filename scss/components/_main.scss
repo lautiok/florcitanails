@@ -1,5 +1,5 @@
 main {
-    .foto-principal{
+    .foto-principal {
         background-image: url(../img/nails.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -11,6 +11,7 @@ main {
         margin-right: 70px;
         margin-left: 70px;
         border-radius: 15px;
+
         h1 {
             font-family: "Open Sans", sans-serif;
             color: white;
@@ -18,9 +19,11 @@ main {
             font-size: 48px;
             text-align: center;
         }
+
         .botton-principal {
             margin-top: 16px;
-            a{
+
+            a {
                 font-family: "Open Sans", sans-serif;
                 display: inline-block;
                 padding: 16px 32px;
@@ -31,11 +34,13 @@ main {
             }
         }
     }
+
     .servicios {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         text-align: center;
+
         .servicios-card {
             display: flex;
             flex-direction: column;
@@ -46,12 +51,14 @@ main {
             border-radius: 5px;
             padding: 30px;
             margin: 20px;
+
             img {
                 width: 100%;
                 height: 300px;
                 margin-bottom: 10px;
                 border-radius: 10px;
             }
+
             h3 {
                 font-family: "Open Sans", sans-serif;
                 font-size: 20px;
@@ -59,6 +66,7 @@ main {
                 margin-bottom: 10px;
                 text-align: center;
             }
+
             a {
                 background-color: $color-principal;
                 color: #fff;
@@ -71,6 +79,7 @@ main {
             }
         }
     }
+
     .informacion-profesional {
         display: flex;
         justify-content: space-between;
@@ -79,38 +88,45 @@ main {
         padding-right: 500px;
         padding-bottom: 30px;
         padding-top: 50px;
-        img{
+
+        img {
             margin-left: 10px;
             max-width: 100%;
             box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
         }
+
         .tex-informacion {
             text-align: center;
             font-family: "Open Sans", sans-serif;
+
             p {
                 color: $color-principal;
             }
         }
     }
+
     .servicios-pagina {
-        h1{
+        h1 {
             display: flex;
             justify-content: center;
             font-family: "Open Sans", sans-serif;
             margin-top: 20px;
             margin-bottom: 20px;
+
             span {
                 color: $color-principal;
             }
         }
     }
+
     .servicios-pag {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         text-align: center;
+
         .servicios-card-pagina {
             display: flex;
             flex-direction: column;
@@ -121,12 +137,14 @@ main {
             border-radius: 5px;
             padding: 30px;
             margin: 20px;
+
             img {
                 width: 100%;
                 height: 300px;
                 margin-bottom: 10px;
                 border-radius: 10px;
             }
+
             h3 {
                 font-family: "Open Sans", sans-serif;
                 font-size: 20px;
@@ -134,6 +152,7 @@ main {
                 margin-bottom: 10px;
                 text-align: center
             }
+
             a {
                 background-color: $color-principal;
                 color: #fff;
@@ -146,20 +165,24 @@ main {
             }
         }
     }
+
     .galeria-pag {
-        h1{
+        h1 {
             display: flex;
             justify-content: center;
             align-items: center;
             font-family: "Open Sans", sans-serif;
+
             span {
                 color: $color-principal;
             }
         }
     }
+
     .carrussel {
         padding: 40px;
     }
+
     .conteiner-img {
         width: 100%;
         max-width: 1100px;
@@ -170,51 +193,91 @@ main {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 250px;
         grid-gap: 20px;
+
         .box-img {
             width: 100%;
             height: 100%;
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+
             &:nth-child(1) {
                 grid-column-start: span 2;
             }
-            &:nth-child(4){
+
+            &:nth-child(4) {
                 grid-row-start: span 2;
             }
         }
     }
+
+    .curso-pagina {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+
+        span {
+            color: $color-principal;
+        }
+    }
+
+    .carrusel-cursos {
+        padding: 50px;
+    }
+
+    .informacion-curso {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        a {
+            background-color: $color-principal;
+            &:hover {
+                background-color: #000000;
+            }
+        }
+
+    }
+
     .cursos-pagina {
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: "Open Sans", sans-serif;
+
         span {
             color: $color-principal;
         }
     }
+
     .iniciar-seccion {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 40px;
         font-family: "Open Sans", sans-serif;
+
         button {
             background-color: $color-principal;
             color: #ffffff;
         }
     }
+
     .contacto-pagina {
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: "Open Sans", sans-serif;
+
         span {
             color: $color-principal;
         }
     }
+
     .informacion-pagina {
         display: flex;
         justify-content: space-between;
@@ -223,19 +286,23 @@ main {
         padding-right: 500px;
         padding-bottom: 30px;
         padding-top: 50px;
-        img{
+
+        img {
             margin-left: 10px;
             max-width: 100%;
             box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
         }
+
         .tex-informacion {
             text-align: center;
             font-family: "Open Sans", sans-serif;
+
             p {
                 color: $color-principal;
             }
+
             a {
                 display: inline-block;
                 padding: 16px 32px;
@@ -246,37 +313,43 @@ main {
             }
         }
     }
+
     .mapa {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 50px;
     }
-    
+
     .ubicacion-contacto {
         display: flex;
         justify-content: space-around;
         margin-top: 70px;
+
         i {
             color: #000000;
             font-size: 50px;
             transition: 0.3s;
+
             &:hover {
                 color: $color-principal;
             }
         }
+
         .item {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             transition: 0.3s;
+
             p {
                 font-family: "Open Sans", sans-serif;
                 font-size: 20px;
             }
         }
     }
+
     .formulario {
         display: flex;
         flex-direction: column;
