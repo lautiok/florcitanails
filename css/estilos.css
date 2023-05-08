@@ -132,7 +132,6 @@ main .informacion-profesional {
     main .informacion-profesional .tex-informacion p {
       color: #fe9a9a; }
 
-/*----------Pagina Servicios----------*/
 main .servicios-pagina h1 {
   display: flex;
   justify-content: center;
@@ -178,7 +177,6 @@ main .servicios-pag {
       font-size: 20px;
       font-weight: bold; }
 
-/*----------Pagina Galeria----------*/
 main .galeria-pag h1 {
   display: flex;
   justify-content: center;
@@ -212,7 +210,6 @@ main .conteiner-img {
     main .conteiner-img .box-img:nth-child(4) {
       grid-row-start: span 2; }
 
-/*-----Pagina cursos-----*/
 main .cursos-pagina {
   display: flex;
   justify-content: center;
@@ -231,7 +228,6 @@ main .iniciar-seccion {
     background-color: #fe9a9a;
     color: #ffffff; }
 
-/*-----Pagina Contacto-----*/
 main .contacto-pagina {
   display: flex;
   justify-content: center;
