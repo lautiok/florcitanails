@@ -1,0 +1,114 @@
+@media screen and (max-width: 1629px) {
+    /*-----Informacion Profesional-----*/
+    main .informacion-profesional {
+        flex-direction: column;
+        padding: 20px;
+        .tex-informacion {
+            padding: 20px;
+        }
+    }
+    /*-----informacion-pagina-----*/
+    main .informacion-pagina {
+        flex-direction: column;
+        padding: 20px;
+        .tex-informacion {
+            padding: 20px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    /*-----HEADER-----*/
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        a {
+            img {
+                width: 100px;
+                right: 100px;
+            }
+        }
+        .checkbtn{
+            display: block;
+        }
+        .bi,
+        .bi-list {
+            display: flex;
+        }
+        #check:checked~ul {
+            left: 0;
+        }
+        ul {
+            display: block;
+            position: fixed;
+            top: 0px;
+            left: -100%;
+            background: $color-principal;
+            width: 100%;
+            height: 100vh;
+            right: 0;
+            z-index: 3;
+            li {
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                a {
+                    color: black;
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    /*Carrusel de pagina Galeria*/
+    main .carrussel {
+        padding: 5px;
+    }
+    /*-----Galeria con grid-----*/
+    main .conteiner-img {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        grid-template-rows: 200px;
+        .box-img:nth-child(1) {
+            grid-column-start: span 1;
+        }
+    }
+    /*-----informacion-pagina-----*/
+    main .mapa {
+        padding: 10px;
+    }
+    main .ubicacion-contacto i {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 771px) {
+    /*-----informacion-pagina-----*/
+main .ubicacion-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 633px) {
+    /*-----Foto Principal-----*/
+    main .foto-principal {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /*-----Galeria con grid-----*/
+    main .conteiner-img {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        .box-img {
+            height: 200px;
+        }
+    }
+}
