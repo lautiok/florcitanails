@@ -12,21 +12,25 @@ header{
         font-size: 25px;
         }
     }
+    
     nav {
         display: flex;
+        flex-flow: row wrap;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .button {
-            display: none;
-            font-size: 30px;
+        width: 100%;
+        .button-burger {
+            background-color: transparent;
             color: #000000;
-
+            font-size: 30px;
+            border: none;
+            display: none;
         }
-        ul {
-            margin: 0;
-            padding: 0;
+        }
+        .nav {
             display: flex;
+            flex-flow: row wrap;
             li {
                 margin: 0;
                 padding: 0;
@@ -43,5 +47,4 @@ header{
                 }
             }
         }
-    }
 }

@@ -23,29 +23,33 @@ header .barra-notificaciones {
 
 header nav {
   display: flex;
+  flex-flow: row wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  header nav .button {
-    display: none;
+  align-items: center;
+  width: 100%; }
+  header nav .button-burger {
+    background-color: transparent;
+    color: #000000;
     font-size: 30px;
-    color: #000000; }
-  header nav ul {
+    border: none;
+    display: none; }
+
+header .nav {
+  display: flex;
+  flex-flow: row wrap; }
+  header .nav li {
     margin: 0;
-    padding: 0;
-    display: flex; }
-    header nav ul li {
-      margin: 0;
-      padding: 0; }
-      header nav ul li a {
-        display: block;
-        padding: 16px;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        color: #000000;
-        transition: 0.5s; }
-        header nav ul li a:hover {
-          color: #fe9a9a; }
+    padding: 0; }
+    header .nav li a {
+      display: block;
+      padding: 16px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      color: #000000;
+      transition: 0.5s; }
+      header .nav li a:hover {
+        color: #fe9a9a; }
 
 main .foto-principal {
   background-image: url(../img/nails.png);
@@ -413,27 +417,17 @@ footer {
     header nav a img {
       width: 100px;
       right: 100px; }
-    header nav .button {
+    header nav .button-burger {
       display: block; }
-    header nav ul {
-      display: block;
-      position: fixed;
-      top: 0px;
-      left: -100%;
-      background: #fe9a9a;
+    header nav .nav {
+      flex-flow: wrap nowrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 100%;
-      height: 100vh;
-      right: 0;
-      z-index: 3; }
-      header nav ul li {
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        margin: 0; }
-        header nav ul li a {
-          color: black; }
-          header nav ul li a:hover {
-            color: white; }
+      display: none; }
+      header nav .nav.activo {
+        display: flex; }
   main .carrussel {
     padding: 5px; }
   main .conteiner-img {
