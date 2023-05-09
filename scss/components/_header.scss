@@ -17,12 +17,11 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        label {
-            color: #000000;
-            font-size: 30px;
-        }
-        .ocult, #check {
+        .button {
             display: none;
+            font-size: 30px;
+            color: #000000;
+
         }
         ul {
             margin: 0;

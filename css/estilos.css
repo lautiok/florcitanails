@@ -26,11 +26,10 @@ header nav {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  header nav label {
-    color: #000000;
-    font-size: 30px; }
-  header nav .ocult, header nav #check {
-    display: none; }
+  header nav .button {
+    display: none;
+    font-size: 30px;
+    color: #000000; }
   header nav ul {
     margin: 0;
     padding: 0;
@@ -414,13 +413,8 @@ footer {
     header nav a img {
       width: 100px;
       right: 100px; }
-    header nav .checkbtn {
+    header nav .button {
       display: block; }
-    header nav .bi,
-    header nav .bi-list {
-      display: flex; }
-    header nav #check:checked ~ ul {
-      left: 0; }
     header nav ul {
       display: block;
       position: fixed;

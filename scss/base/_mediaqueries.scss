@@ -30,15 +30,8 @@
                 right: 100px;
             }
         }
-        .checkbtn{
+        .button {
             display: block;
-        }
-        .bi,
-        .bi-list {
-            display: flex;
-        }
-        #check:checked~ul {
-            left: 0;
         }
         ul {
             display: block;
