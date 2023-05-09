@@ -348,5 +348,16 @@ main {
         flex-direction: column;
         justify-content: center;
         padding: 50px;
+        font-family: "Open Sans", sans-serif;
+        button {
+            display: inline-block;
+            padding: 16px 32px;
+            background-color: $color-principal;
+            color: white;
+            font-size: 19px;
+            border-radius: 5px;
+            margin-left: 800px;
+            margin-right: 800px;
+        }
     }
 }
