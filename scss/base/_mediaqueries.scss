@@ -29,7 +29,11 @@
             height: auto;
             }
         }
+<<<<<<< HEAD
         label {
+=======
+        .button-burger {
+>>>>>>> 7d7fb97be51341cd8cab09ebea1a047ed397172d
             display: block;
             position: relative;
             right: 25px;
@@ -39,6 +43,7 @@
                 height: auto;
             }
         }
+<<<<<<< HEAD
         .menu {
             position: absolute;
             top: 180px;
@@ -51,6 +56,18 @@
                 li {
                     padding: 40px;
                 }
+=======
+        .nav {
+            flex-flow: wrap nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            display: none;
+            &.activo {
+                display: flex;
+
+>>>>>>> 7d7fb97be51341cd8cab09ebea1a047ed397172d
             }
         }
         #btn_menu:checked~.menu {
