@@ -4,72 +4,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    a {
+    a { 
         color: #fff;
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
         font-size: 25px;
-        }
     }
-<<<<<<< HEAD
+}
 header{
-    .logo-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     #btn_menu {
         display: none;
     }
-    label {
+    label{
         display: none;
-        width: 40px;
-        height: auto;
-        padding: 10px;
+        width: 1.87em;
+        padding: 0.937em;
+        height: 1.87em;
         &:hover {
             cursor: pointer;
         }
     }
-    .menu {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        }
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: "Open Sans", sans-serif;
-            a {
-                color: black;
-                padding: 20px;
-                transition: 0.5s;
-                &:hover {
-                    color: $color-principal;
-                }
-
-            }
-        }
-=======
-    
     nav {
-        display: flex;
-        flex-flow: row wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        .button-burger {
-            background-color: transparent;
-            color: #000000;
-            font-size: 30px;
-            border: none;
-            display: none;
-        }
-        }
-        .nav {
+        ul{
             display: flex;
             flex-flow: row wrap;
             li {
@@ -88,5 +48,5 @@ header{
                 }
             }
         }
->>>>>>> 7d7fb97be51341cd8cab09ebea1a047ed397172d
+    }
 }

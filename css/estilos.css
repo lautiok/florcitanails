@@ -21,70 +21,35 @@
     font-weight: 700;
     font-size: 25px; }
 
-header .logo-header {
+header {
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-  align-items: center; }
-
-header #btn_menu {
-  display: none; }
-
-header label {
-  display: none;
-  width: 40px;
-  height: auto;
-  padding: 10px; }
-  header label:hover {
-    cursor: pointer; }
-
-header .menu {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-
-header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Open Sans", sans-serif; }
-  header ul a {
-    color: black;
-    padding: 20px;
-    transition: 0.5s; }
-    header ul a:hover {
-      color: #fe9a9a; }
-=======
-  flex-flow: row wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%; }
-  header nav .button-burger {
-    background-color: transparent;
-    color: #000000;
-    font-size: 30px;
-    border: none;
+  align-items: center; }
+  header #btn_menu {
     display: none; }
-
-header .nav {
-  display: flex;
-  flex-flow: row wrap; }
-  header .nav li {
-    margin: 0;
-    padding: 0; }
-    header .nav li a {
-      display: block;
-      padding: 16px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 700;
-      color: #000000;
-      transition: 0.5s; }
-      header .nav li a:hover {
-        color: #fe9a9a; }
->>>>>>> 7d7fb97be51341cd8cab09ebea1a047ed397172d
+  header label {
+    display: none;
+    width: 1.87em;
+    padding: 0.937em;
+    height: 1.87em; }
+    header label:hover {
+      cursor: pointer; }
+  header nav ul {
+    display: flex;
+    flex-flow: row wrap; }
+    header nav ul li {
+      margin: 0;
+      padding: 0; }
+      header nav ul li a {
+        display: block;
+        padding: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        color: #000000;
+        transition: 0.5s; }
+        header nav ul li a:hover {
+          color: #fe9a9a; }
 
 main .foto-principal {
   background-image: url(../img/nails.png);
@@ -444,56 +409,7 @@ footer {
   main .card-curso {
     flex-direction: column; } }
 
-<<<<<<< HEAD
-@media screen and (max-width: 760px) {
-  header {
-    display: flex;
-    justify-content: space-around; }
-    header .logo-header img {
-      width: 200px;
-      height: auto; }
-    header label {
-      display: block;
-      position: relative;
-      right: 25px;
-      top: 65px; }
-      header label img {
-        width: 40px;
-        height: auto; }
-    header .menu {
-      position: absolute;
-      top: 180px;
-      background-color: #fe9a9a;
-      width: 20em;
-      margin-right: -68.25em;
-      transition: all 0.5s; }
-      header .menu ul {
-        flex-direction: column; }
-        header .menu ul li {
-          padding: 40px; }
-    header #btn_menu:checked ~ .menu {
-      margin: 0; }
-=======
 @media screen and (max-width: 800px) {
-  header nav {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px; }
-    header nav a img {
-      width: 100px;
-      right: 100px; }
-    header nav .button-burger {
-      display: block; }
-    header nav .nav {
-      flex-flow: wrap nowrap;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      display: none; }
-      header nav .nav.activo {
-        display: flex; }
->>>>>>> 7d7fb97be51341cd8cab09ebea1a047ed397172d
   main .carrussel {
     padding: 5px; }
   main .conteiner-img {
@@ -518,6 +434,36 @@ footer {
     margin-top: 70px; } }
 
 @media screen and (max-width: 633px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around; }
+    header #btn_menu:checked ~ .menu {
+      margin: 0; }
+    header .logo-header {
+      padding-right: 250px; }
+      header .logo-header img {
+        height: 150px; }
+    header label {
+      display: block;
+      position: relative;
+      right: 25px; }
+      header label img {
+        width: 30px;
+        right: auto; }
+    header .menu {
+      position: absolute;
+      top: 180px;
+      background: #fe9a9a;
+      width: 20.25em;
+      right: 1em;
+      margin-right: -50.25em;
+      transition: all 0.5s;
+      z-index: 3; }
+      header .menu ul {
+        flex-direction: column;
+        text-align: center; }
+        header .menu ul li a:hover {
+          color: white; }
   main .foto-principal {
     margin: 10px; } }
 

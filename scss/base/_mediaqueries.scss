@@ -19,61 +19,7 @@
         flex-direction: column;
     }
 }
-@media screen and (max-width:760px) {
-    header{
-        display: flex;
-        justify-content: space-around;
-        .logo-header {
-            img {
-            width: 200px;
-            height: auto;
-            }
-        }
-<<<<<<< HEAD
-        label {
-=======
-        .button-burger {
->>>>>>> 7d7fb97be51341cd8cab09ebea1a047ed397172d
-            display: block;
-            position: relative;
-            right: 25px;
-            top: 65px;
-            img {
-                width: 40px;
-                height: auto;
-            }
-        }
-<<<<<<< HEAD
-        .menu {
-            position: absolute;
-            top: 180px;
-            background-color: $color-principal;
-            width: 20em;
-            margin-right: -68.25em;
-            transition: all 0.5s;
-            ul {
-                flex-direction: column;
-                li {
-                    padding: 40px;
-                }
-=======
-        .nav {
-            flex-flow: wrap nowrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            display: none;
-            &.activo {
-                display: flex;
-
->>>>>>> 7d7fb97be51341cd8cab09ebea1a047ed397172d
-            }
-        }
-        #btn_menu:checked~.menu {
-            margin: 0
-        }
-    }
+@media screen and (max-width: 800px) {
     main .carrussel {
         padding: 5px;
     }
@@ -107,6 +53,47 @@ main .ubicacion-contacto {
 }
 
 @media screen and (max-width: 633px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        #btn_menu:checked~.menu {
+            margin: 0;
+        }
+        .logo-header {
+            padding-right: 250px;
+            img {
+                height: 150px;
+            }
+        }
+        label {
+            display: block;
+            position: relative;
+            right: 25px;
+            img {
+                width: 30px;
+                right: auto;
+            }
+        }
+        .menu {
+            position: absolute;
+            top: 180px;
+            background: $color-principal;
+            width: 20.25em;
+            right: 1em;
+            margin-right: -50.25em;
+            transition: all 0.5s;
+            z-index: 3;
+            ul {
+                flex-direction: column;
+                text-align: center;
+                li {
+                    a:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
     main .foto-principal {
         margin: 10px;
     }
