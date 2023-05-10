@@ -440,7 +440,7 @@ footer {
     header #btn_menu:checked ~ .menu {
       margin: 0; }
     header .logo-header {
-      padding-right: 250px; }
+      padding-right: 100px; }
       header .logo-header img {
         height: 150px; }
     header label {
