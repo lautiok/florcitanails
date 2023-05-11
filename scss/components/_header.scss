@@ -11,31 +11,37 @@
         font-size: 25px;
     }
 }
-header{
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    #btn_menu {
+    .button{
         display: none;
-    }
-    label{
-        display: none;
-        width: 1.87em;
-        padding: 0.937em;
-        height: 1.87em;
-        &:hover {
-            cursor: pointer;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        svg{
+            width: 30px;
+            height: 30px;
+            color: #000000;
+            transition: 0.3s;
+            &:hover {
+                color: $color-principal;
+            }
         }
     }
-    nav {
-        ul{
+    .nav {
+        .ul{
             display: flex;
             flex-flow: row wrap;
-            li {
+            .li {
                 margin: 0;
                 padding: 0;
-                a {
+                .a {
                     display: block;
                     padding: 16px;
                     font-family: "Open Sans", sans-serif;

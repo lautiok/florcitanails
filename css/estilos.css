@@ -9,6 +9,7 @@
     text-decoration: none; }
 
 /*----------PALETA DE COLOR----------*/
+/*----------MIXINS----------*/
 .barra-notificaciones {
   background-color: #fe9a9a;
   height: 40px;
@@ -21,34 +22,40 @@
     font-weight: 700;
     font-size: 25px; }
 
-header {
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  header #btn_menu {
-    display: none; }
-  header label {
+  .header .button {
     display: none;
-    width: 1.87em;
-    padding: 0.937em;
-    height: 1.87em; }
-    header label:hover {
-      cursor: pointer; }
-  header nav ul {
+    cursor: pointer;
+    background-color: transparent;
+    border: none; }
+    .header .button svg {
+      width: 30px;
+      height: 30px;
+      color: #000000;
+      transition: 0.3s; }
+      .header .button svg:hover {
+        color: #fe9a9a; }
+  .header .nav .ul {
     display: flex;
     flex-flow: row wrap; }
-    header nav ul li {
+    .header .nav .ul .li {
       margin: 0;
       padding: 0; }
-      header nav ul li a {
+      .header .nav .ul .li .a {
         display: block;
         padding: 16px;
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
         color: #000000;
         transition: 0.5s; }
-        header nav ul li a:hover {
+        .header .nav .ul .li .a:hover {
           color: #fe9a9a; }
 
 main .foto-principal {
@@ -359,14 +366,7 @@ main .formulario {
   padding: 50px;
   font-family: "Open Sans", sans-serif; }
   main .formulario button {
-    display: inline-block;
-    padding: 16px 32px;
-    background-color: #fe9a9a;
-    color: white;
-    font-size: 19px;
-    border-radius: 5px;
-    margin-left: 800px;
-    margin-right: 800px; }
+    display: flex; }
 
 footer {
   display: flex;
@@ -434,36 +434,37 @@ footer {
     margin-top: 70px; } }
 
 @media screen and (max-width: 633px) {
-  header {
+  .header {
     flex-direction: row;
+    flex-flow: wrap;
     justify-content: space-around; }
-    header #btn_menu:checked ~ .menu {
-      margin: 0; }
-    header .logo-header {
+    .header .logo-header {
       padding-right: 100px; }
-      header .logo-header img {
+      .header .logo-header img {
         height: 150px; }
-    header label {
-      display: block;
-      position: relative;
-      right: 25px; }
-      header label img {
-        width: 30px;
-        right: auto; }
-    header .menu {
-      position: absolute;
-      top: 180px;
-      background: #fe9a9a;
-      width: 20.25em;
-      right: 1em;
-      margin-right: -50.25em;
-      transition: all 0.5s;
-      z-index: 3; }
-      header .menu ul {
+    .header .button {
+      display: block; }
+    .header .nav {
+      width: 100%;
+      display: none;
+      opacity: 0;
+      height: 0vh;
+      pointer-events: none;
+      overflow: hidden;
+      transition: all .5s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header .nav .ul {
         flex-direction: column;
-        text-align: center; }
-        header .menu ul li a:hover {
-          color: white; }
+        flex-flow: wrap nowrap;
+        justify-content: center;
+        align-items: center; }
+      .header .nav.activo {
+        display: flex;
+        opacity: 1;
+        height: 50vh;
+        pointer-events: auto; }
   main .foto-principal {
     margin: 10px; } }
 

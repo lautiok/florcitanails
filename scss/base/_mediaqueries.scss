@@ -53,44 +53,41 @@ main .ubicacion-contacto {
 }
 
 @media screen and (max-width: 633px) {
-    header {
+    .header {
         flex-direction: row;
+        flex-flow: wrap;
         justify-content: space-around;
-        #btn_menu:checked~.menu {
-            margin: 0;
-        }
         .logo-header {
             padding-right: 100px;
             img {
                 height: 150px;
             }
         }
-        label {
+        .button {
             display: block;
-            position: relative;
-            right: 25px;
-            img {
-                width: 30px;
-                right: auto;
-            }
         }
-        .menu {
-            position: absolute;
-            top: 180px;
-            background: $color-principal;
-            width: 20.25em;
-            right: 1em;
-            margin-right: -50.25em;
-            transition: all 0.5s;
-            z-index: 3;
-            ul {
+        .nav {
+            width: 100%;
+            display: none;
+            opacity: 0;
+            height: 0vh;
+            pointer-events: none;
+            overflow: hidden;
+            transition: all .5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .ul {
                 flex-direction: column;
-                text-align: center;
-                li {
-                    a:hover {
-                        color: white;
-                    }
-                }
+                flex-flow: wrap nowrap;
+                justify-content: center;
+                align-items: center;
+            } 
+            &.activo {
+                display: flex;
+                opacity: 1;
+                height: 50vh;
+                pointer-events: auto;
             }
         }
     }
