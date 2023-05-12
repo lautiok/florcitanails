@@ -1,6 +1,6 @@
 main {
     .foto-principal {
-        background-image: url(../img/nails.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../img/nails.png);
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -28,6 +28,10 @@ main {
                 color: white;
                 font-size: 19px;
                 border-radius: 5px;
+                transition: 1s;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
     }
@@ -69,6 +73,10 @@ main {
                 font-size: 20px;
                 font-weight: bold;
             }
+            transition: 1s;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
     .informacion-profesional {
@@ -82,13 +90,20 @@ main {
         img {
             margin-left: 10px;
             max-width: 100%;
-            box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-            -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+            transition: 1s;
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+            }
         }
         .tex-informacion {
             text-align: center;
             font-family: "Open Sans", sans-serif;
+            h2 {
+                font-size: 40px;
+            }
             p {
                 color: $color-principal;
             }
@@ -101,6 +116,7 @@ main {
             font-family: "Open Sans", sans-serif;
             margin-top: 20px;
             margin-bottom: 20px;
+            font-size: 30px;
             span {
                 color: $color-principal;
             }
@@ -144,6 +160,10 @@ main {
                 font-size: 20px;
                 font-weight: bold;
             }
+            transition: 1s;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
     .galeria-pag {
@@ -152,6 +172,7 @@ main {
             justify-content: center;
             align-items: center;
             font-family: "Open Sans", sans-serif;
+            font-size: 30px;
             span {
                 color: $color-principal;
             }
@@ -177,6 +198,14 @@ main {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                transition: 1s;
+                transition: 1s;
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+                    -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+                }
             }
             &:nth-child(1) {
                 grid-column-start: span 2;
@@ -191,6 +220,7 @@ main {
         justify-content: center;
         align-items: center;
         font-family: "Open Sans", sans-serif;
+        font-size: 30px;
         span {
             color: $color-principal;
         }
@@ -258,6 +288,7 @@ main {
         justify-content: center;
         align-items: center;
         font-family: "Open Sans", sans-serif;
+        font-size: 30px;
         span {
             color: $color-principal;
         }
@@ -278,6 +309,7 @@ main {
         justify-content: center;
         align-items: center;
         font-family: "Open Sans", sans-serif;
+        font-size: 30px;
         span {
             color: $color-principal;
         }
@@ -293,9 +325,13 @@ main {
         img {
             margin-left: 10px;
             max-width: 100%;
-            box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-            -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+            transition: 1s;
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+            }
         }
         .tex-informacion {
             text-align: center;
@@ -310,6 +346,10 @@ main {
                 color: white;
                 font-size: 19px;
                 border-radius: 5px;
+                transition: 1s;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
     }
@@ -329,6 +369,7 @@ main {
             transition: 0.3s;
             &:hover {
                 color: $color-principal;
+                transform: scale(1.2);
             }
         }
         .item {

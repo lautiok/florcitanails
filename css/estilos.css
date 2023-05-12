@@ -59,7 +59,7 @@
           color: #fe9a9a; }
 
 main .foto-principal {
-  background-image: url(../img/nails.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../img/nails.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -85,7 +85,10 @@ main .foto-principal {
       background-color: #fe9a9a;
       color: white;
       font-size: 19px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      transition: 1s; }
+      main .foto-principal .botton-principal a:hover {
+        transform: scale(1.2); }
 
 main .servicios {
   display: flex;
@@ -101,7 +104,8 @@ main .servicios {
     background-color: #fff;
     border-radius: 5px;
     padding: 30px;
-    margin: 20px; }
+    margin: 20px;
+    transition: 1s; }
     main .servicios .servicios-card img {
       width: 100%;
       height: 300px;
@@ -122,6 +126,8 @@ main .servicios {
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
       font-weight: bold; }
+    main .servicios .servicios-card:hover {
+      transform: scale(1.1); }
 
 main .informacion-profesional {
   display: flex;
@@ -134,12 +140,17 @@ main .informacion-profesional {
   main .informacion-profesional img {
     margin-left: 10px;
     max-width: 100%;
-    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
+    transition: 1s; }
+    main .informacion-profesional img:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
   main .informacion-profesional .tex-informacion {
     text-align: center;
     font-family: "Open Sans", sans-serif; }
+    main .informacion-profesional .tex-informacion h2 {
+      font-size: 40px; }
     main .informacion-profesional .tex-informacion p {
       color: #fe9a9a; }
 
@@ -148,7 +159,8 @@ main .servicios-pagina h1 {
   justify-content: center;
   font-family: "Open Sans", sans-serif;
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-size: 30px; }
   main .servicios-pagina h1 span {
     color: #fe9a9a; }
 
@@ -166,7 +178,8 @@ main .servicios-pag {
     background-color: #fff;
     border-radius: 5px;
     padding: 30px;
-    margin: 20px; }
+    margin: 20px;
+    transition: 1s; }
     main .servicios-pag .servicios-card-pagina img {
       width: 100%;
       height: 300px;
@@ -187,12 +200,15 @@ main .servicios-pag {
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
       font-weight: bold; }
+    main .servicios-pag .servicios-card-pagina:hover {
+      transform: scale(1.2); }
 
 main .galeria-pag h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px; }
   main .galeria-pag h1 span {
     color: #fe9a9a; }
 
@@ -215,7 +231,14 @@ main .conteiner-img {
     main .conteiner-img .box-img img {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      transition: 1s;
+      transition: 1s; }
+      main .conteiner-img .box-img img:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
     main .conteiner-img .box-img:nth-child(1) {
       grid-column-start: span 2; }
     main .conteiner-img .box-img:nth-child(4) {
@@ -225,7 +248,8 @@ main .curso-pagina {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px; }
   main .curso-pagina span {
     color: #fe9a9a; }
 
@@ -284,7 +308,8 @@ main .cursos-pagina {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px; }
   main .cursos-pagina span {
     color: #fe9a9a; }
 
@@ -302,7 +327,8 @@ main .contacto-pagina {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px; }
   main .contacto-pagina span {
     color: #fe9a9a; }
 
@@ -317,9 +343,12 @@ main .informacion-pagina {
   main .informacion-pagina img {
     margin-left: 10px;
     max-width: 100%;
-    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
+    transition: 1s; }
+    main .informacion-pagina img:hover {
+      transform: scale(1.2);
+      box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
   main .informacion-pagina .tex-informacion {
     text-align: center;
     font-family: "Open Sans", sans-serif; }
@@ -331,7 +360,10 @@ main .informacion-pagina {
       background-color: #fe9a9a;
       color: white;
       font-size: 19px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      transition: 1s; }
+      main .informacion-pagina .tex-informacion a:hover {
+        transform: scale(1.2); }
 
 main .mapa {
   display: flex;
@@ -348,7 +380,8 @@ main .ubicacion-contacto {
     font-size: 50px;
     transition: 0.3s; }
     main .ubicacion-contacto i:hover {
-      color: #fe9a9a; }
+      color: #fe9a9a;
+      transform: scale(1.2); }
   main .ubicacion-contacto .item {
     display: flex;
     flex-direction: column;
@@ -384,12 +417,15 @@ footer {
     margin: 20px 0; }
     footer .redessociales-footer img {
       max-width: 40px;
-      margin: 0 10px; }
+      margin: 0 10px;
+      transition: 1s; }
+      footer .redessociales-footer img:hover {
+        transform: scale(1.2); }
   footer h3 a {
     color: white;
     font-size: 16px;
     margin: 0;
-    transition: 0.4s; }
+    transition: 1.2s; }
     footer h3 a:hover {
       color: #000000; }
 

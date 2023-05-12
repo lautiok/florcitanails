@@ -16,6 +16,10 @@ footer {
         img{
             max-width: 40px;
             margin: 0 10px;
+            transition: 1s;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
     h3{
@@ -23,7 +27,7 @@ footer {
             color: white;
             font-size: 16px;
             margin: 0;
-            transition: 0.4s;
+            transition: 1.2s;
             &:hover{
                 color: #000000;
             }
