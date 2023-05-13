@@ -1,24 +1,18 @@
+/*BARRA DE NOTIFICACIONES*/
 .barra-notificaciones {
     background-color: $color-principal;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex( row , wrap , center , center);
     a { 
-        color: #fff;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        font-size: 25px;
+        @include font(#ffffff,"Open Sans", sans-serif, 30px)
     }
 }
+/*HEADER*/
 .header {
     width: 100%;
     background-color: #ffffff;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex( column , wrap , center , center );
     .button{
         display: none;
         cursor: pointer;
@@ -36,17 +30,14 @@
     }
     .nav {
         .ul{
-            display: flex;
-            flex-flow: row wrap;
+            @include flex( row , wrap , flex-end , center );
             .li {
                 margin: 0;
                 padding: 0;
                 .a {
                     display: block;
                     padding: 16px;
-                    font-family: "Open Sans", sans-serif;
-                    font-weight: 700;
-                    color: #000000;
+                    @include font(#020202,"Open Sans", sans-serif, 17px);
                     transition: 0.5s;
                     &:hover {
                         color: $color-principal;

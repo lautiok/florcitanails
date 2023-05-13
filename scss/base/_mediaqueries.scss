@@ -1,13 +1,13 @@
 @media screen and (max-width: 1629px) {
     main .informacion-profesional {
-        flex-direction: column;
+        @include flex(column, nowrap, space-around, center);
         padding: 20px;
         .tex-informacion {
             padding: 20px;
         }
     }
     main .informacion-pagina {
-        flex-direction: column;
+        @include flex(column, nowrap ,space-between, center);
         padding: 20px;
         .tex-informacion {
             padding: 20px;
@@ -16,7 +16,7 @@
 }
 @media screen and (max-width: 979px) {
     main .card-curso {
-        flex-direction: column;
+        @include flex(column, nowrap ,space-around, center);
     }
 }
 @media screen and (max-width: 800px) {
@@ -45,18 +45,14 @@
 
 @media screen and (max-width: 771px) {
 main .ubicacion-contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include flex(column, nowrap, space-around,center);
     margin-top: 70px;
     }
 }
 
 @media screen and (max-width: 633px) {
     .header {
-        flex-direction: row;
-        flex-flow: wrap;
-        justify-content: space-around;
+        @include flex(row, wrap , space-around , center );
         .logo-header {
             padding-right: 100px;
             img {
@@ -74,14 +70,9 @@ main .ubicacion-contacto {
             pointer-events: none;
             overflow: hidden;
             transition: all .5s ease;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(row, nowrap, center, center);
             .ul {
-                flex-direction: column;
-                flex-flow: wrap nowrap;
-                justify-content: center;
-                align-items: center;
+                @include flex( column, wrap , center, center );
             } 
             &.activo {
                 display: flex;

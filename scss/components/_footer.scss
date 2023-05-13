@@ -1,12 +1,7 @@
 footer { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, nowrap, center, center);
     background-color: $color-principal;
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    @include font(#ffffff, "Open Sans", sans-serif, 20px);
     padding: 50px 0;
     .logo-footer {
         max-width: 100px;

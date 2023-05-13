@@ -1,4 +1,15 @@
 /*----------PALETA DE COLOR----------*/
 $color-principal:#fe9a9a;
-
 /*----------MIXINS----------*/
+@mixin flex($dir,$wrap,$just,$align){
+    display: flex;
+    flex-flow: $dir $wrap;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin font($color,$family,$sans,$size){
+    color: $color;
+    font-family: $family, $sans;
+    font-size: $size;
+}
