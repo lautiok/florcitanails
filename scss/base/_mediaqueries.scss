@@ -50,8 +50,8 @@ main .ubicacion-contacto {
     }
 }
 
-@media screen and (max-width: 633px) {
-    .header {
+@media screen and (max-width: 661px) {
+    header .barra-principal {
         @include flex(row, wrap , space-around , center );
         .logo-header {
             padding-right: 100px;

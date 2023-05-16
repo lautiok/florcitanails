@@ -11,21 +11,20 @@
 
 /*----------PALETA DE COLOR----------*/
 /*----------MIXINS----------*/
-/*BARRA DE NOTIFICACIONES*/
-.barra-notificaciones {
+/*HEADER*/
+header .barra-notificaciones {
   background-color: #fe9a9a;
   height: 40px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center; }
-  .barra-notificaciones a {
+  header .barra-notificaciones a {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     font-size: 30px; }
 
-/*HEADER*/
-.header {
+header .barra-principal {
   width: 100%;
   background-color: #ffffff;
   padding: 1rem;
@@ -33,34 +32,34 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center; }
-  .header .button {
+  header .barra-principal .button {
     display: none;
     cursor: pointer;
     background-color: transparent;
     border: none; }
-    .header .button svg {
+    header .barra-principal .button svg {
       width: 30px;
       height: 30px;
       color: #000000;
       transition: 0.3s; }
-      .header .button svg:hover {
+      header .barra-principal .button svg:hover {
         color: #fe9a9a; }
-  .header .nav .ul {
+  header .barra-principal .nav .ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: center; }
-    .header .nav .ul .li {
+    header .barra-principal .nav .ul .li {
       margin: 0;
       padding: 0; }
-      .header .nav .ul .li .a {
+      header .barra-principal .nav .ul .li .a {
         display: block;
         padding: 16px;
         color: #020202;
         font-family: "Open Sans", sans-serif;
         font-size: 17px;
         transition: 0.5s; }
-        .header .nav .ul .li .a:hover {
+        header .barra-principal .nav .ul .li .a:hover {
           color: #fe9a9a; }
 
 main {
@@ -504,19 +503,19 @@ footer {
     align-items: center;
     margin-top: 70px; } }
 
-@media screen and (max-width: 633px) {
-  .header {
+@media screen and (max-width: 661px) {
+  header .barra-principal {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center; }
-    .header .logo-header {
+    header .barra-principal .logo-header {
       padding-right: 100px; }
-      .header .logo-header img {
+      header .barra-principal .logo-header img {
         height: 150px; }
-    .header .button {
+    header .barra-principal .button {
       display: block; }
-    .header .nav {
+    header .barra-principal .nav {
       width: 100%;
       display: none;
       opacity: 0;
@@ -528,12 +527,12 @@ footer {
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center; }
-      .header .nav .ul {
+      header .barra-principal .nav .ul {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center; }
-      .header .nav.activo {
+      header .barra-principal .nav.activo {
         display: flex;
         opacity: 1;
         height: 50vh;

@@ -1,46 +1,47 @@
-/*BARRA DE NOTIFICACIONES*/
-.barra-notificaciones {
-    background-color: $color-principal;
-    height: 40px;
-    @include flex( row , wrap , center , center);
-    a { 
-        @include font(#ffffff,"Open Sans", sans-serif, 30px)
-    }
-}
 /*HEADER*/
-.header {
-    width: 100%;
-    background-color: #ffffff;
-    padding: 1rem;
-    @include flex( column , wrap , center , center );
-    .button{
-        display: none;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-        svg{
-            width: 30px;
-            height: 30px;
-            color: #000000;
-            transition: 0.3s;
-            &:hover {
-                color: $color-principal;
-            }
+header {
+    .barra-notificaciones {
+        background-color: $color-principal;
+        height: 40px;
+        @include flex( row , wrap , center , center);
+        a { 
+            @include font(#ffffff,"Open Sans", sans-serif, 30px)
         }
     }
-    .nav {
-        .ul{
-            @include flex( row , wrap , flex-end , center );
-            .li {
-                margin: 0;
-                padding: 0;
-                .a {
-                    display: block;
-                    padding: 16px;
-                    @include font(#020202,"Open Sans", sans-serif, 17px);
-                    transition: 0.5s;
-                    &:hover {
-                        color: $color-principal;
+    .barra-principal {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 1rem;
+        @include flex( column , wrap , center , center );
+        .button{
+            display: none;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            svg{
+                width: 30px;
+                height: 30px;
+                color: #000000;
+                transition: 0.3s;
+                &:hover {
+                    color: $color-principal;
+                }
+            }
+        }
+        .nav {
+            .ul{
+                @include flex( row , wrap , flex-end , center );
+                .li {
+                    margin: 0;
+                    padding: 0;
+                    .a {
+                        display: block;
+                        padding: 16px;
+                        @include font(#020202,"Open Sans", sans-serif, 17px);
+                        transition: 0.5s;
+                        &:hover {
+                            color: $color-principal;
+                        }
                     }
                 }
             }
