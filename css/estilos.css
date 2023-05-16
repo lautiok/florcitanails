@@ -276,7 +276,7 @@ main {
         color: #fe9a9a; }
     main .informacion-curso .card-curso {
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       justify-content: space-around;
       align-items: center;
       text-align: center;
@@ -299,7 +299,8 @@ main {
     main .plataforma h2 {
       color: #000000; }
     main .plataforma p {
-      color: #fe9a9a; }
+      color: #fe9a9a;
+      text-align: center; }
     main .plataforma a {
       background-color: #fe9a9a;
       border: none;
@@ -438,12 +439,13 @@ footer {
     max-width: 100px; }
   footer .redessociales-footer {
     margin: 20px 0; }
-    footer .redessociales-footer img {
-      max-width: 40px;
-      margin: 0 10px;
-      transition: 1s; }
-      footer .redessociales-footer img:hover {
-        transform: scale(1.2); }
+    footer .redessociales-footer i {
+      color: #ffffff;
+      font-size: 45px;
+      transition: 1s;
+      padding: 5px; }
+      footer .redessociales-footer i:hover {
+        color: #000000; }
   footer h3 a {
     color: white;
     font-size: 16px;

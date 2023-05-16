@@ -202,7 +202,7 @@ main {
             }
         }
         .card-curso {
-            @include flex(row, nowrap ,space-around, center);
+            @include flex(row, wrap ,space-around, center);
             text-align: center;
             padding-bottom: 50px;
             a {
@@ -223,6 +223,7 @@ main {
         }
         p { 
             color: $color-principal;
+            text-align: center;
         }
         a {
             background-color: $color-principal;
