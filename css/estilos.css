@@ -11,6 +11,7 @@
 
 /*----------PALETA DE COLOR----------*/
 /*----------MIXINS----------*/
+/*-----listas-----*/
 /*HEADER*/
 header .barra-notificaciones {
   background-color: #fe9a9a;
@@ -70,13 +71,13 @@ main {
   /*PLATAFORMA*/
   /*CONTACTO*/ }
   main .foto-principal {
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../img/nails.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../img/nails.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 450px;
     margin-right: 70px;
     margin-left: 70px;
@@ -109,7 +110,7 @@ main {
       text-align: center;
       width: 300px;
       height: auto;
-      background-color: #fff;
+      background-color: #ffffff;
       border-radius: 5px;
       padding: 30px;
       margin: 20px;
@@ -183,7 +184,7 @@ main {
       text-align: center;
       width: 300px;
       height: auto;
-      background-color: #fff;
+      background-color: #ffffff;
       border-radius: 5px;
       padding: 30px;
       margin: 20px;
@@ -326,10 +327,10 @@ main {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    padding: 40px;
     color: #000000;
     font-family: "Open Sans", sans-serif;
-    font-size: 15px; }
+    font-size: 15px;
+    padding: 40px; }
     main .iniciar-seccion button {
       background-color: #fe9a9a;
       color: #ffffff; }
@@ -362,10 +363,10 @@ main {
         -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
     main .informacion-pagina .tex-informacion {
-      text-align: center;
       color: #000000;
       font-family: "Open Sans", sans-serif;
-      font-size: 40px; }
+      font-size: 40px;
+      text-align: center; }
       main .informacion-pagina .tex-informacion p {
         color: #fe9a9a;
         font-family: "Open Sans", sans-serif;
@@ -392,8 +393,6 @@ main {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    display: flex;
-    justify-content: space-around;
     margin-top: 70px; }
     main .ubicacion-contacto i {
       color: #000000;
@@ -409,19 +408,22 @@ main {
       align-items: center;
       transition: 0.3s; }
       main .ubicacion-contacto .item p {
-        font-family: "Open Sans", sans-serif;
+        color: #000000;
+        font-family: "Open sans", sans-serif;
         font-size: 20px; }
   main .formulario {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px;
-    font-family: "Open Sans", sans-serif; }
+    color: #000000;
+    font-family: "Open sans", sans-serif;
+    font-size: 15px;
+    padding: 50px; }
     main .formulario button {
+      color: #000000;
+      font-family: "Open sans", sans-serif;
+      font-size: 19px;
       text-align: center; }
 
 footer {
@@ -446,7 +448,7 @@ footer {
       footer .redessociales-footer i:hover {
         color: #000000; }
   footer h3 a {
-    color: white;
+    color: #ffffff;
     font-size: 16px;
     margin: 0;
     transition: 1.2s; }

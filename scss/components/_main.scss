@@ -1,10 +1,10 @@
 main {
     /*INDEX*/
     .foto-principal {
+        @include flex(column, nowrap ,center, center);
         background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../img/nails.png);
         background-repeat: no-repeat;
         background-size: cover;
-        @include flex(column, nowrap ,center, center);
         height: 450px;
         margin-right: 70px;
         margin-left: 70px;
@@ -35,7 +35,7 @@ main {
             text-align: center;
             width: 300px;
             height: auto;
-            background-color: #fff;
+            background-color: nth($colores-neutros, 2);
             border-radius: 5px;
             padding: 30px;
             margin: 20px;
@@ -106,7 +106,7 @@ main {
             text-align: center;
             width: 300px;
             height: auto;
-            background-color: #fff;
+            background-color: nth($colores-neutros, 2);
             border-radius: 5px;
             padding: 30px;
             margin: 20px;
@@ -219,7 +219,7 @@ main {
         padding: 80px;
         font-family: "Open Sans", sans-serif;
         h2 {
-            color: #000000;
+            color: nth($colores-neutros, 1);
         }
         p { 
             color: $color-principal;
@@ -247,11 +247,11 @@ main {
     }
     .iniciar-seccion {
         @include flex(row, nowrap ,center, center);
-        padding: 40px;
         @include font(#000000, "Open Sans", sans-serif, 15px);
+        padding: 40px;
         button {
             background-color: $color-principal;
-            color: #ffffff;
+            color: nth($colores-neutros, 2);
         }
     }
     /*CONTACTO*/
@@ -280,8 +280,8 @@ main {
             }
         }
         .tex-informacion {
-            text-align: center;
             @include font(#000000,"Open Sans", sans-serif, 40px);
+            text-align: center;
             p {
                 @include font($color-principal,"Open Sans", sans-serif, 20px);
             }
@@ -304,11 +304,9 @@ main {
     }
     .ubicacion-contacto {
         @include flex(row, nowrap, space-around,center);
-        display: flex;
-        justify-content: space-around;
         margin-top: 70px;
         i {
-            color: #000000;
+            color: nth($colores-neutros, 1 );
             font-size: 50px;
             transition: 0.3s;
             &:hover {
@@ -320,19 +318,16 @@ main {
             @include flex(column, nowrap, center, center);
             transition: 0.3s;
             p {
-                font-family: "Open Sans", sans-serif;
-                font-size: 20px;
+                @include font(#000000, "Open sans", sans-serif, 20px);
             }
         }
     }
     .formulario {
         @include flex(column, nowrap, center, normal);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include font(#000000, "Open sans", sans-serif, 15px);
         padding: 50px;
-        font-family: "Open Sans", sans-serif;
         button {
+            @include font(#000000, "Open sans", sans-serif, 19px);
             text-align: center;
             
         }

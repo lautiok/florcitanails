@@ -10,7 +10,7 @@ header {
     }
     .barra-principal {
         width: 100%;
-        background-color: #ffffff;
+        background-color: nth($colores-neutros, 2);
         padding: 1rem;
         @include flex( column , wrap , center , center );
         .button{
@@ -21,7 +21,7 @@ header {
             svg{
                 width: 30px;
                 height: 30px;
-                color: #000000;
+                color: nth($colores-neutros, 1);
                 transition: 0.3s;
                 &:hover {
                     color: $color-principal;

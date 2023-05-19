@@ -9,23 +9,23 @@ footer {
     .redessociales-footer {
         margin: 20px 0;
             i {
-                color: #ffffff;
+                color: nth($colores-neutros, 2);
                 font-size: 45px;
                 transition: 1s;
                 padding: 5px;
                 &:hover {
-                    color: #000000;
+                    color: nth($colores-neutros, 1);
                 }
         }
     }
     h3 {
         a{
-            color: white;
+            color: nth($colores-neutros, 2);
             font-size: 16px;
             margin: 0;
             transition: 1.2s;
             &:hover{
-                color: #000000;
+                color: nth($colores-neutros, 1);
             }
         }
     }
