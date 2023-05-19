@@ -78,7 +78,7 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../img/nails.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../img/nails.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
