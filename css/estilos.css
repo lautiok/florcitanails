@@ -12,14 +12,17 @@
 /*----------PALETA DE COLOR----------*/
 /*----------MIXINS----------*/
 /*-----listas-----*/
+/*------mapas-----*/
+/*extends*/
+header .barra-notificaciones, main .servicios-pagina h1, main .galeria-pag h1, main .curso-pagina, main .cursos-pagina, main .iniciar-seccion, main .contacto-pagina, main .mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /*HEADER*/
 header .barra-notificaciones {
   background-color: #fe9a9a;
-  height: 40px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center; }
+  height: 40px; }
   header .barra-notificaciones a {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
@@ -128,12 +131,13 @@ main {
         margin-bottom: 25px; }
       main .servicios .servicios-card a {
         background-color: #fe9a9a;
-        border: none;
-        border-radius: 5px;
+        color: #ffffff;
         padding: 10px;
+        border-radius: 5px;
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
-        font-size: 20px; }
+        font-size: 20px;
+        font-weight: bold; }
       main .servicios .servicios-card:hover {
         transform: scale(1.1); }
   main .informacion-profesional {
@@ -164,10 +168,6 @@ main {
         font-family: "Open Sans", sans-serif;
         font-size: 20px; }
   main .servicios-pagina h1 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
@@ -202,19 +202,16 @@ main {
         margin-bottom: 25px; }
       main .servicios-pag .servicios-card-pagina a {
         background-color: #fe9a9a;
-        border: none;
-        border-radius: 5px;
+        color: #ffffff;
         padding: 10px;
+        border-radius: 5px;
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
-        font-size: 20px; }
+        font-size: 20px;
+        font-weight: bold; }
       main .servicios-pag .servicios-card-pagina:hover {
         transform: scale(1.2); }
   main .galeria-pag h1 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 30px; }
@@ -251,10 +248,6 @@ main {
       main .conteiner-img .box-img:nth-child(4) {
         grid-row-start: span 2; }
   main .curso-pagina {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 30px; }
@@ -313,20 +306,12 @@ main {
       main .plataforma a:hover {
         transform: scale(1.1); }
   main .cursos-pagina {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 30px; }
     main .cursos-pagina span {
       color: #fe9a9a; }
   main .iniciar-seccion {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
@@ -335,10 +320,6 @@ main {
       background-color: #fe9a9a;
       color: #ffffff; }
   main .contacto-pagina {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 30px; }
@@ -383,10 +364,6 @@ main {
         main .informacion-pagina .tex-informacion a:hover {
           transform: scale(1.2); }
   main .mapa {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     padding: 50px; }
   main .ubicacion-contacto {
     display: flex;

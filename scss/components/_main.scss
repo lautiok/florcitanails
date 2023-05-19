@@ -51,11 +51,12 @@ main {
                 margin-bottom: 25px;
             }
             a {
-                background-color: $color-principal;
-                border: none;
-                border-radius: 5px;
-                padding: 10px;
+                background-color: map-get($map: $boton-precios, $key:bg-color);
+                color: map-get($map: $boton-precios, $key:color-letras );
+                padding: map-get($map: $boton-precios, $key: ancho );
+                border-radius: map-get($map: $boton-precios, $key:redondeo );
                 @include font(#ffffff, "Open Sans", sans-serif, 20px);
+                font-weight: map-get($map: $boton-precios, $key: weight );
             }
             transition: 1s;
             &:hover {
@@ -91,7 +92,7 @@ main {
     /*SERVICIOS*/
     .servicios-pagina {
         h1 {
-            @include flex(row, nowrap ,center, center);
+            @extend %center;
             @include font(#000000, "Open Sans", sans-serif, 30px);
             margin-top: 20px;
             margin-bottom: 20px;
@@ -123,11 +124,12 @@ main {
                 margin-bottom: 25px;
             }
             a {
-                background-color: $color-principal;
-                border: none;
-                border-radius: 5px;
-                padding: 10px;
+                background-color: map-get($map: $boton-precios, $key:bg-color);
+                color: map-get($map: $boton-precios, $key:color-letras );
+                padding: map-get($map: $boton-precios, $key: ancho );
+                border-radius: map-get($map: $boton-precios, $key:redondeo );
                 @include font(#ffffff, "Open Sans", sans-serif, 20px);
+                font-weight: map-get($map: $boton-precios, $key: weight );
             }
             &:hover {
                 transform: scale(1.2);
@@ -137,7 +139,7 @@ main {
     /*GaALERIA*/
     .galeria-pag {
         h1 {
-            @include flex(row, nowrap ,center, center);
+            @extend %center;
             @include font(#000000, "Open Sans", sans-serif, 30px);
             span {
                 color: $color-principal;
@@ -183,7 +185,7 @@ main {
     }
     /*CURSOS*/
     .curso-pagina {
-        @include flex(row, nowrap ,center, center);
+        @extend %center;
         @include font(#000000, "Open Sans", sans-serif, 30px);
         span {
             color: $color-principal;
@@ -239,14 +241,14 @@ main {
     }
     /*PLATAFORMA*/
     .cursos-pagina {
-        @include flex(row, nowrap ,center, center);
+        @extend %center;
         @include font(#000000, "Open Sans", sans-serif, 30px);
         span {
             color: $color-principal;
         }
     }
     .iniciar-seccion {
-        @include flex(row, nowrap ,center, center);
+        @extend %center;
         @include font(#000000, "Open Sans", sans-serif, 15px);
         padding: 40px;
         button {
@@ -256,7 +258,7 @@ main {
     }
     /*CONTACTO*/
     .contacto-pagina {
-        @include flex(row, nowrap ,center, center);
+        @extend %center;
         @include font(#000000, "Open Sans", sans-serif, 30px);
         span {
             color: $color-principal;
@@ -299,7 +301,7 @@ main {
         }
     }
     .mapa {
-        @include flex(row, nowrap, center, center);
+        @extend %center;
         padding: 50px;
     }
     .ubicacion-contacto {

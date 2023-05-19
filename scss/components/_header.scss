@@ -3,7 +3,7 @@ header {
     .barra-notificaciones {
         background-color: $color-principal;
         height: 40px;
-        @include flex( row , wrap , center , center);
+        @extend %center;
         a { 
             @include font(#ffffff,"Open Sans", sans-serif, 30px)
         }

@@ -19,3 +19,22 @@ $color-principal:#fe9a9a;
 $colores-neutros:
 #000000,
 #ffffff;
+
+/*------mapas-----*/
+
+$boton-precios:(
+    bg-color: #fe9a9a,
+    color-letras: #ffffff,
+    redondeo: 5px,
+    ancho:10px,
+    weight: bold,
+);
+
+
+/*extends*/
+
+%center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
