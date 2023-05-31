@@ -1,4 +1,3 @@
-/*RESET*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 * {
   margin: 0;
@@ -9,17 +8,11 @@
   * a {
     text-decoration: none; }
 
-/*----------PALETA DE COLOR----------*/
-/*----------MIXINS----------*/
-/*-----listas-----*/
-/*------mapas-----*/
-/*extends*/
 header .barra-notificaciones, main .servicios-pagina h1, main .galeria-pag h1, main .curso-pagina, main .cursos-pagina, main .iniciar-seccion, main .contacto-pagina, main .mapa {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-/*HEADER*/
 header .barra-notificaciones {
   background-color: #fe9a9a;
   height: 40px; }

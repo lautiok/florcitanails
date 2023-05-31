@@ -1,6 +1,6 @@
-/*----------PALETA DE COLOR----------*/
+
 $color-principal:#fe9a9a;
-/*----------MIXINS----------*/
+
 @mixin flex($dir,$wrap,$just,$align){
     display: flex;
     flex-flow: $dir $wrap;
@@ -14,13 +14,11 @@ $color-principal:#fe9a9a;
     font-size: $size;
 }
 
-/*-----listas-----*/
 
 $colores-neutros:
 #000000,
 #ffffff;
 
-/*------mapas-----*/
 
 $boton-precios:(
     bg-color: #fe9a9a,
@@ -29,9 +27,6 @@ $boton-precios:(
     ancho:10px,
     weight: bold,
 );
-
-
-/*extends*/
 
 %center {
     display: flex;
