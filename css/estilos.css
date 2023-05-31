@@ -66,342 +66,353 @@ header .barra-principal {
         header .barra-principal .nav .ul .li .a:hover {
           color: #fe9a9a; }
 
-main {
-  /*INDEX*/
-  /*SERVICIOS*/
-  /*GaALERIA*/
-  /*CURSOS*/
-  /*PLATAFORMA*/
-  /*CONTACTO*/ }
-  main .foto-principal {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../img/nails.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    margin-right: 70px;
-    margin-left: 70px;
-    border-radius: 15px; }
-    main .foto-principal h1 {
+main .foto-principal {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../img/nails.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  margin-right: 70px;
+  margin-left: 70px;
+  border-radius: 15px; }
+  main .foto-principal h1 {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    margin: 0;
+    text-align: center; }
+  main .foto-principal .botton-principal {
+    margin-top: 16px; }
+    main .foto-principal .botton-principal a {
       color: #ffffff;
       font-family: "Open Sans", sans-serif;
-      font-size: 48px;
-      margin: 0;
-      text-align: center; }
-    main .foto-principal .botton-principal {
-      margin-top: 16px; }
-      main .foto-principal .botton-principal a {
-        color: #ffffff;
-        font-family: "Open Sans", sans-serif;
-        font-size: 19px;
-        display: inline-block;
-        padding: 16px 32px;
-        background-color: #fe9a9a;
-        border-radius: 5px;
-        transition: 1s; }
-        main .foto-principal .botton-principal a:hover {
-          transform: scale(1.2); }
-  main .servicios {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center; }
-    main .servicios .servicios-card {
-      text-align: center;
-      width: 300px;
-      height: auto;
-      background-color: #ffffff;
+      font-size: 19px;
+      display: inline-block;
+      padding: 16px 32px;
+      background-color: #fe9a9a;
       border-radius: 5px;
-      padding: 30px;
-      margin: 20px;
       transition: 1s; }
-      main .servicios .servicios-card img {
-        width: 100%;
-        height: 300px;
-        margin-bottom: 10px;
-        border-radius: 10px; }
-      main .servicios .servicios-card h3 {
-        color: #080808;
-        font-family: "Open Sans", sans-serif;
-        font-size: 20px;
-        margin: 0;
-        margin-bottom: 25px; }
-      main .servicios .servicios-card a {
-        background-color: #fe9a9a;
-        color: #ffffff;
-        padding: 10px;
-        border-radius: 5px;
-        color: #ffffff;
-        font-family: "Open Sans", sans-serif;
-        font-size: 20px;
-        font-weight: bold; }
-      main .servicios .servicios-card:hover {
-        transform: scale(1.1); }
-  main .informacion-profesional {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 300px;
-    padding-right: 500px;
-    padding-bottom: 30px;
-    padding-top: 50px; }
-    main .informacion-profesional img {
-      margin-left: 10px;
-      max-width: 100%;
+      main .foto-principal .botton-principal a:hover {
+        transform: scale(1.2); }
+
+main .servicios {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  main .servicios .servicios-card {
+    text-align: center;
+    width: 300px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 20px;
+    transition: 1s; }
+    main .servicios .servicios-card img {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 10px;
+      border-radius: 10px; }
+    main .servicios .servicios-card h3 {
+      color: #080808;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 25px; }
+    main .servicios .servicios-card a {
+      background-color: #fe9a9a;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: bold; }
+    main .servicios .servicios-card:hover {
+      transform: scale(1.1); }
+
+main .informacion-profesional {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 300px;
+  padding-right: 500px;
+  padding-bottom: 30px;
+  padding-top: 50px; }
+  main .informacion-profesional img {
+    margin-left: 10px;
+    max-width: 100%;
+    transition: 1s; }
+    main .informacion-profesional img:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
+  main .informacion-profesional .tex-informacion {
+    text-align: center;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px; }
+    main .informacion-profesional .tex-informacion p {
+      color: #fe9a9a;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px; }
+
+main .servicios-pagina h1 {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  main .servicios-pagina h1 span {
+    color: #fe9a9a; }
+
+main .servicios-pag {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  main .servicios-pag .servicios-card-pagina {
+    text-align: center;
+    width: 300px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 20px;
+    transition: 1s; }
+    main .servicios-pag .servicios-card-pagina img {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 10px;
+      border-radius: 10px; }
+    main .servicios-pag .servicios-card-pagina h3 {
+      color: #000000;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 25px; }
+    main .servicios-pag .servicios-card-pagina a {
+      background-color: #fe9a9a;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: bold; }
+    main .servicios-pag .servicios-card-pagina:hover {
+      transform: scale(1.2); }
+
+main .galeria-pag h1 {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px; }
+  main .galeria-pag h1 span {
+    color: #fe9a9a; }
+
+main .carrussel {
+  padding: 40px; }
+
+main .conteiner-img {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px; }
+  main .conteiner-img .box-img {
+    width: 100%;
+    height: 100%; }
+    main .conteiner-img .box-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 1s;
       transition: 1s; }
-      main .informacion-profesional img:hover {
-        transform: scale(1.1);
+      main .conteiner-img .box-img img:hover {
+        transform: scale(1);
         box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
-    main .informacion-profesional .tex-informacion {
-      text-align: center;
-      color: #000000;
-      font-family: "Open Sans", sans-serif;
-      font-size: 40px; }
-      main .informacion-profesional .tex-informacion p {
-        color: #fe9a9a;
-        font-family: "Open Sans", sans-serif;
-        font-size: 20px; }
-  main .servicios-pagina h1 {
+    main .conteiner-img .box-img:nth-child(1) {
+      grid-column-start: span 2; }
+    main .conteiner-img .box-img:nth-child(4) {
+      grid-row-start: span 2; }
+
+main .curso-pagina {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px; }
+  main .curso-pagina span {
+    color: #fe9a9a; }
+
+main .carrusel-cursos {
+  padding: 50px; }
+
+main .informacion-curso {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: normal; }
+  main .informacion-curso h2 {
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-    main .servicios-pagina h1 span {
+    text-align: center; }
+    main .informacion-curso h2 span {
       color: #fe9a9a; }
-  main .servicios-pag {
+  main .informacion-curso .card-curso {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center; }
-    main .servicios-pag .servicios-card-pagina {
-      text-align: center;
-      width: 300px;
-      height: auto;
-      background-color: #ffffff;
-      border-radius: 5px;
-      padding: 30px;
-      margin: 20px;
-      transition: 1s; }
-      main .servicios-pag .servicios-card-pagina img {
-        width: 100%;
-        height: 300px;
-        margin-bottom: 10px;
-        border-radius: 10px; }
-      main .servicios-pag .servicios-card-pagina h3 {
-        color: #000000;
-        font-family: "Open Sans", sans-serif;
-        font-size: 20px;
-        margin: 0;
-        margin-bottom: 25px; }
-      main .servicios-pag .servicios-card-pagina a {
-        background-color: #fe9a9a;
-        color: #ffffff;
-        padding: 10px;
-        border-radius: 5px;
-        color: #ffffff;
-        font-family: "Open Sans", sans-serif;
-        font-size: 20px;
-        font-weight: bold; }
-      main .servicios-pag .servicios-card-pagina:hover {
-        transform: scale(1.2); }
-  main .galeria-pag h1 {
-    color: #000000;
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px; }
-    main .galeria-pag h1 span {
-      color: #fe9a9a; }
-  main .carrussel {
-    padding: 40px; }
-  main .conteiner-img {
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px;
-    grid-gap: 20px; }
-    main .conteiner-img .box-img {
-      width: 100%;
-      height: 100%; }
-      main .conteiner-img .box-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: 1s;
-        transition: 1s; }
-        main .conteiner-img .box-img img:hover {
-          transform: scale(1.1);
-          box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-          -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
-      main .conteiner-img .box-img:nth-child(1) {
-        grid-column-start: span 2; }
-      main .conteiner-img .box-img:nth-child(4) {
-        grid-row-start: span 2; }
-  main .curso-pagina {
-    color: #000000;
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px; }
-    main .curso-pagina span {
-      color: #fe9a9a; }
-  main .carrusel-cursos {
-    padding: 50px; }
-  main .informacion-curso {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: normal; }
-    main .informacion-curso h2 {
-      color: #000000;
-      font-family: "Open Sans", sans-serif;
-      font-size: 30px;
-      text-align: center; }
-      main .informacion-curso h2 span {
-        color: #fe9a9a; }
-    main .informacion-curso .card-curso {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center;
-      padding-bottom: 50px; }
-      main .informacion-curso .card-curso a {
-        background-color: #fe9a9a;
-        border: none;
-        border-radius: 5px;
-        padding: 10px;
-        color: #ffffff;
-        font-family: "Open Sans", sans-serif;
-        font-size: 17px; }
-  main .plataforma {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 80px;
-    font-family: "Open Sans", sans-serif; }
-    main .plataforma h2 {
-      color: #000000; }
-    main .plataforma p {
-      color: #fe9a9a;
-      text-align: center; }
-    main .plataforma a {
+    text-align: center;
+    padding-bottom: 50px; }
+    main .informacion-curso .card-curso a {
       background-color: #fe9a9a;
       border: none;
       border-radius: 5px;
       padding: 10px;
       color: #ffffff;
       font-family: "Open Sans", sans-serif;
-      font-size: 20px;
-      transition: 1s; }
-      main .plataforma a:hover {
-        transform: scale(1.1); }
-  main .cursos-pagina {
+      font-size: 17px; }
+
+main .plataforma {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  font-family: "Open Sans", sans-serif; }
+  main .plataforma h2 {
+    color: #000000; }
+  main .plataforma p {
+    color: #fe9a9a;
+    text-align: center; }
+  main .plataforma a {
+    background-color: #fe9a9a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    transition: 1s; }
+    main .plataforma a:hover {
+      transform: scale(1.1); }
+
+main .cursos-pagina {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px; }
+  main .cursos-pagina span {
+    color: #fe9a9a; }
+
+main .iniciar-seccion {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding: 40px; }
+  main .iniciar-seccion button {
+    background-color: #fe9a9a;
+    color: #ffffff; }
+
+main .contacto-pagina {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px; }
+  main .contacto-pagina span {
+    color: #fe9a9a; }
+
+main .informacion-pagina {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 300px;
+  padding-right: 500px;
+  padding-bottom: 30px;
+  padding-top: 50px; }
+  main .informacion-pagina img {
+    margin-left: 10px;
+    max-width: 100%;
+    transition: 1s; }
+    main .informacion-pagina img:hover {
+      transform: scale(1.2);
+      box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
+  main .informacion-pagina .tex-informacion {
     color: #000000;
     font-family: "Open Sans", sans-serif;
-    font-size: 30px; }
-    main .cursos-pagina span {
-      color: #fe9a9a; }
-  main .iniciar-seccion {
-    color: #000000;
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    padding: 40px; }
-    main .iniciar-seccion button {
-      background-color: #fe9a9a;
-      color: #ffffff; }
-  main .contacto-pagina {
-    color: #000000;
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px; }
-    main .contacto-pagina span {
-      color: #fe9a9a; }
-  main .informacion-pagina {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 300px;
-    padding-right: 500px;
-    padding-bottom: 30px;
-    padding-top: 50px; }
-    main .informacion-pagina img {
-      margin-left: 10px;
-      max-width: 100%;
-      transition: 1s; }
-      main .informacion-pagina img:hover {
-        transform: scale(1.2);
-        box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75); }
-    main .informacion-pagina .tex-informacion {
-      color: #000000;
+    font-size: 40px;
+    text-align: center; }
+    main .informacion-pagina .tex-informacion p {
+      color: #fe9a9a;
       font-family: "Open Sans", sans-serif;
-      font-size: 40px;
-      text-align: center; }
-      main .informacion-pagina .tex-informacion p {
-        color: #fe9a9a;
-        font-family: "Open Sans", sans-serif;
-        font-size: 20px; }
-      main .informacion-pagina .tex-informacion a {
-        display: inline-block;
-        padding: 16px 32px;
-        background-color: #fe9a9a;
-        color: #ffffff;
-        font-family: "Open sans", sans-serif;
-        font-size: 19px;
-        border-radius: 5px;
-        transition: 1s; }
-        main .informacion-pagina .tex-informacion a:hover {
-          transform: scale(1.2); }
-  main .mapa {
-    padding: 50px; }
-  main .ubicacion-contacto {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 70px; }
-    main .ubicacion-contacto i {
-      color: #000000;
-      font-size: 50px;
-      transition: 0.3s; }
-      main .ubicacion-contacto i:hover {
-        color: #fe9a9a;
+      font-size: 20px; }
+    main .informacion-pagina .tex-informacion a {
+      display: inline-block;
+      padding: 16px 32px;
+      background-color: #fe9a9a;
+      color: #ffffff;
+      font-family: "Open sans", sans-serif;
+      font-size: 19px;
+      border-radius: 5px;
+      transition: 1s; }
+      main .informacion-pagina .tex-informacion a:hover {
         transform: scale(1.2); }
-    main .ubicacion-contacto .item {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      transition: 0.3s; }
-      main .ubicacion-contacto .item p {
-        color: #000000;
-        font-family: "Open sans", sans-serif;
-        font-size: 20px; }
-  main .formulario {
+
+main .mapa {
+  padding: 50px; }
+
+main .ubicacion-contacto {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px; }
+  main .ubicacion-contacto i {
+    color: #000000;
+    font-size: 50px;
+    transition: 0.3s; }
+    main .ubicacion-contacto i:hover {
+      color: #fe9a9a;
+      transform: scale(1.2); }
+  main .ubicacion-contacto .item {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: normal;
-    color: #000000;
-    font-family: "Open sans", sans-serif;
-    font-size: 15px;
-    padding: 50px; }
-    main .formulario button {
+    align-items: center;
+    transition: 0.3s; }
+    main .ubicacion-contacto .item p {
       color: #000000;
       font-family: "Open sans", sans-serif;
-      font-size: 19px;
-      text-align: center; }
+      font-size: 20px; }
+
+main .formulario {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: normal;
+  color: #000000;
+  font-family: "Open sans", sans-serif;
+  font-size: 15px;
+  padding: 50px; }
+  main .formulario button {
+    color: #000000;
+    font-family: "Open sans", sans-serif;
+    font-size: 19px;
+    text-align: center; }
 
 footer {
   display: flex;
