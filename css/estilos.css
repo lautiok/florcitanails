@@ -15,11 +15,23 @@ header .barra-notificaciones, main .servicios-pagina h1, main .galeria-pag h1, m
 
 header .barra-notificaciones {
   background-color: #fe9a9a;
-  height: 40px; }
-  header .barra-notificaciones a {
+  height: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 9999; }
+  header .barra-notificaciones h2 a {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     font-size: 30px; }
+  header .barra-notificaciones #cerrar-notificacion {
+    margin-left: 1rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer; }
 
 header .barra-principal {
   width: 100%;

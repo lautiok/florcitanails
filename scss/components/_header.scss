@@ -2,10 +2,25 @@ header {
     .barra-notificaciones {
         background-color: $color-principal;
         height: 40px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 9999;
         @extend %center;
-        a { 
-            @include font(#ffffff,"Open Sans", sans-serif, 30px)
+        h2 {
+            a { 
+                @include font(#ffffff,"Open Sans", sans-serif, 30px)
+            }
         }
+        #cerrar-notificacion {
+            margin-left: 1rem;
+            color: #ffffff;
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+          }
     }
     .barra-principal {
         width: 100%;
