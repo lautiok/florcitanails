@@ -4,8 +4,6 @@ import styles from "./ultimoservicio.module.css";
 export default async function UltimoServicio() {
   const servicio = await getData();
 
-  console.log("Servicio:", servicio);
-
   const date = new Date(servicio[0].timestamp);
   const day = date.getDate();
   const month = date.toLocaleString("es-ES", { month: "long" });
