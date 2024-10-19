@@ -8,8 +8,8 @@ export default function CardService() {
     >
       <h2>Esculpidas en acrilico </h2>
       <div className={style.contenedor}>
-        <p>Set Completo: 14.500$</p>
-        <p>Service 13.000$</p>
+        <p>Set Completo: consultar </p>
+        <p>Service: consultar </p>
       </div>
     </article>
   );
