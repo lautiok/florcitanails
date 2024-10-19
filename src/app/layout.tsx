@@ -21,6 +21,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  metadata.title =
+    "Florcita Nails - Servicios de manicura y academia en Buenos Aires";
   return (
     <html lang="en">
       <body className={`${poppins && poppins.variable}`}>
