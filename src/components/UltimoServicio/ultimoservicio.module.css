@@ -1,0 +1,45 @@
+.ultimoServicio {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 505px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: var(--font-poppins);
+  justify-content: flex-end; /* Posiciona todos los elementos hacia abajo */
+}
+
+.ultimoServicio h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ultimoServicio p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+  .ultimoServicio {
+    width: 400px;
+    height: 510px;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .ultimoServicio {
+    width: 830px;
+    height: 510px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .ultimoServicio {
+    height: 190px;
+    width: 500px;
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Esculpidas en Acrilico",
+    "modalidad": "presencial",
+    "description": "Este curso super COMPLETO consta de 5 modulos. Ideal para principiantes que inicien en esculpido. Tambien podes tomarlo como un muy buen PERFECCIONAMIENTO si no estas conforme con otros cursos que hiciste. Moldes, Frances, Reversa, Baby Boomer, Service, Mantenimiento y mucho más.",
+    "price": 60000
+  },
+  {
+    "title": "Esculpidas en Polygel",
+    "modalidad": "presencial",
+    "description": "aprenderás todos los conocimientos fundamentales para dominar la técnica de esculpido con Polygel, una alternativa fácil de trabajar que te permitirá ofrecer servicios de extensión y kapping con excelentes resultados.",
+    "price": 50000
+  },
+  {
+    "title": "Mis materiales",
+    "modalidad": "Online",
+    "description": " Aprenderas a utilizar las herramientas basicas, tecnicas y mucho mas",
+    "price": 10000
+  }
+]

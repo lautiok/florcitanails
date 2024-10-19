@@ -1,0 +1,57 @@
+.reservas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-poppins);
+  background: rgb(148, 215, 197);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 215, 197, 1) 0%,
+    rgba(244, 223, 226, 1) 100%
+  );
+
+  width: 920px;
+  height: 240px;
+  border-radius: 1rem;
+}
+
+.reservas h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.reservas p {
+  color: #000000c4;
+}
+
+.reservas a {
+  background-color: #000;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .reservas {
+    width: 820px;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .reservas {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .reservas {
+    width: 370px;
+    height: 190px;
+    text-align: center;
+  }
+}

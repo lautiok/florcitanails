@@ -1,0 +1,21 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-poppins);
+  gap: 1rem;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 430px) {
+  .contenedor {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "tipo_servicio": "Esculpidas cover",
+    "tipo_material": "Esculpidas en acrílico",
+    "precio_full_set": "12.000$",
+    "precio_service": "9.000$"
+  },
+  {
+    "tipo_servicio": "Esculpidas con esmaltado",
+    "tipo_material": "Esculpidas en acrílico",
+    "precio_full_set": "12.500$",
+    "precio_service": "11.000$"
+  },
+  {
+    "tipo_servicio": "Esculpidas baby boomer",
+    "tipo_material": "Esculpidas en acrílico",
+    "precio_full_set": "14.500$",
+    "precio_service": "12.500$"
+  },
+  {
+    "tipo_servicio": "Esculpidas Full encapsulado",
+    "tipo_material": "Esculpidas en acrílico",
+    "precio_full_set": "15.700$",
+    "precio_service": "13.700$"
+  },
+  {
+    "tipo_servicio": "Kapping con esmaltado",
+    "tipo_material": "Kapping en acrílico",
+    "precio_full_set": "10.800$",
+    "precio_service": "8.000$"
+  },
+  {
+    "tipo_servicio": "Kapping baby boomer",
+    "tipo_material": "Kapping en acrílico",
+    "precio_full_set": "11.800$",
+    "precio_service": "9.000$"
+  },
+  {
+    "tipo_servicio": "Kapping encapsulado",
+    "tipo_material": "Kapping en acrílico",
+    "precio_full_set": "13.800$",
+    "precio_service": "11.800$"
+  },
+  {
+    "tipo_servicio": "Esculpidas en Polygel",
+    "tipo_material": "Esculpidas en polygel",
+    "precio_full_set": "12.000$",
+    "precio_service": "9.000$"
+  },
+  {
+    "tipo_servicio": "Kapping en Polygel",
+    "tipo_material": "Esculpidas en polygel",
+    "precio_full_set": "10.800$",
+    "precio_service": "8.000$"
+  },
+  {
+    "tipo_servicio": "Esmaltado semi",
+    "tipo_material": "Esmaltado semipermanente",
+    "precio_full_set": "9.000$",
+    "precio_service": "6.000$"
+  },
+  {
+    "tipo_servicio": "Esmaltado semi en pies",
+    "tipo_material": "Esmaltado semipermanente",
+    "precio_full_set": "9.000$",
+    "precio_service": "6.000$"
+  },
+  {
+    "tipo_servicio": "Esculpidas en acrílico con tips",
+    "tipo_material": "Esculpidas en acrílico",
+    "precio_full_set": "12.000$",
+    "precio_service": "9.000$"
+  },
+  {
+    "tipo_servicio": "Remocion",
+    "tipo_material": "otro lugar",
+    "precio_full_set": "0.000$",
+    "precio_service": "0.000$"
+  },
+  {
+    "tipo_servicio": "Remocion",
+    "tipo_material": "florcitaNails",
+    "precio_full_set": "0.000$",
+    "precio_service": "0.000$"
+  }
+]

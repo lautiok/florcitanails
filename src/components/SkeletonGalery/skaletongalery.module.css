@@ -1,0 +1,12 @@
+.galeriaItem {
+  width: 300px;
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Skeleton loader styles */
+.skeleton {
+  background-color: #ddd;
+  animation: pulse 1.5s infinite;
+}

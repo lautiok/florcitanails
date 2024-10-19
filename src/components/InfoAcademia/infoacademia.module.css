@@ -1,0 +1,16 @@
+.infoacademia {
+  display: flex;
+  flex-direction: column;
+  width: 68%;
+  gap: 1rem;
+}
+
+.infoacademia article h2 {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 884px) {
+  .infoacademia {
+    width: 90%;
+  }
+}

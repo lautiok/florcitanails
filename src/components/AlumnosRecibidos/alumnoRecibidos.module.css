@@ -1,0 +1,30 @@
+.alumnosRecibidos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 400px;
+  height: 170px;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.numero {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.alumno {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #000000c4;
+}
+
+@media screen and (max-width: 490px) {
+  .alumnosRecibidos {
+    width: 370px;
+  }
+}

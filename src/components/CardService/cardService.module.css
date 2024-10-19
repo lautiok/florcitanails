@@ -1,0 +1,32 @@
+.cardService {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  width: 400px;
+  height: 240px;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--font-poppins);
+  color: #fff;
+}
+
+.contenedor {
+  display: flex;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 884px) {
+  .cardService {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .cardService {
+    width: 370px;
+    height: 180px;
+  }
+}

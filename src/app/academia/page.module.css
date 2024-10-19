@@ -1,0 +1,8 @@
+.academia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-poppins);
+  gap: 1rem;
+}

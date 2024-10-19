@@ -1,0 +1,13 @@
+.serviceReserva {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-poppins);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 430px) {
+  .serviceReserva {
+    flex-direction: column;
+  }
+}

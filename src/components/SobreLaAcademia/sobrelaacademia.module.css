@@ -1,0 +1,32 @@
+.sobreLaAcademia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 400px;
+  height: 170px;
+  background-color: #f4dfe2;
+  margin-top: 0.5rem;
+}
+
+.sobreLaAcademia h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sobreLaAcademia p {
+  font-size: 0.9rem;
+  color: #000000c4;
+}
+
+.sobreLaAcademia a {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 490px) {
+  .sobreLaAcademia {
+    width: 370px;
+  }
+}

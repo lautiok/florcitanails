@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: var(--font-poppins);
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav li {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.button {
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 430px) {
+  .header {
+    justify-content: space-between;
+    margin: 1rem;
+  }
+
+  .nav {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+}
