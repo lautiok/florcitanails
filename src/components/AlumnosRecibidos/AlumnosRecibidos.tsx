@@ -10,7 +10,7 @@ export default function AlumnosRecibidos() {
       </div>
       <div className={style.alumno}>
         <p>
-          Mas de dies alumnas recibidas en <br /> nuestra academia
+          Mas de diez alumnas recibidas en <br /> nuestra academia
         </p>
       </div>
     </div>
