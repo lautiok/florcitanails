@@ -3,40 +3,14 @@
   margin: 0 auto;
   font-family: var(--font-poppins);
 }
-.Card {
-  width: 525px;
-  height: 300px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
-}
 
-.Card.Flipped {
-  transform: rotateY(180deg);
-}
-
-.Front,
-.Back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+.Front {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.Front {
-  background-color: #f3f3f3;
-}
-
-.Back {
-  background-color: #f4dfe2;
-  color: white;
-  transform: rotateY(180deg);
 }
 
 .ContactContainer {
@@ -105,37 +79,9 @@
 .CardContainer {
   perspective: 1000px;
   width: 525px;
-  height: 350px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.8s;
-}
-
-.Flipped {
-  transform: rotateY(180deg);
-}
-
-.Back {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  transform: rotateY(180deg);
-}
-
-.Back span {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #00ff22;
 }
 
 .Error {

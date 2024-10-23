@@ -1,92 +1,39 @@
 "use client";
-import { useState } from "react";
 import style from "./login.module.css";
-
+import Link from "next/link";
+import { useForm } from "react-hook-form";
 export default function Login() {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const [formData, setFormData] = useState({
-    email: "",
+  const { register, handleSubmit } = useForm();
+
+  const hanbleSendEmail = handleSubmit((data) => {
+    console.log(data);
   });
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSendEmail = async () => {
-    setIsLoading(true);
-
-    if (!formData.email) {
-      setError("Todos los campos son obligatorios");
-      setIsLoading(false);
-      return;
-    }
-
-    try {
-      const response = await fetch("/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.status === 200) {
-        setIsFlipped(true);
-        setIsLoading(false);
-      } else {
-        console.error("Error enviando correo:", response.statusText);
-        setError(
-          "Hemos tenido un problema, intenta comunicarte por el siguiente medio: nahuelguerra56b@gmail.com"
-        );
-        setIsLoading(false);
-      }
-    } catch (error) {
-      console.error("Error enviando correo:");
-      setError(
-        "Hemos tenido un problema al enviar el correo, intenta comunicarte conmigo por el siguiente medio: nahuelguerra56b@gmail.com"
-      );
-      setIsLoading(false);
-    }
-  };
-
   return (
-    <div
-      id="contact"
-      className={`${style.CardContainer} ${isFlipped ? style.Flipped : ""}`}
-    >
+    <div id="contact" className={style.CardContainer}>
       <div className={style.ContactContainer}>
-        <h1>Nuestra plataforma estara disponible pronto</h1>
-        <p>Ingrese su correo para recibir la notificacion</p>
-        {error && <p className={style.Error}>{error}</p>}
+        <h2>Iniciar Sesión</h2>
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            handleSendEmail();
+            hanbleSendEmail();
           }}
         >
+          <input type="email" placeholder="email" {...register("email")} />
           <input
-            type="email"
-            name="email"
-            placeholder="email"
-            value={formData.email}
-            onChange={handleInputChange}
+            type="password"
+            placeholder="password"
+            {...register("password")}
           />
-          <button type="submit" disabled={isLoading}>
-            {isLoading ? "Enviando..." : "Enviar"}
-          </button>
+
+          <Link href="/auth/forgot-password">¿Olvidaste tu contraseña?</Link>
+          <div className={style.Links}>
+            <button style={{ backgroundColor: "#f4dfe2" }}>
+              <Link href="/auth/register">registrar</Link>
+            </button>
+            <button type="submit">ingresar</button>
+          </div>
         </form>
-      </div>
-      <div className={style.Back}>
-        <h2>
-          <span>✔</span> ¡Hemos registrado tu correo!
-        </h2>
       </div>
     </div>
   );

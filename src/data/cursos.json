@@ -1,20 +1,65 @@
 [
   {
+    "id": "esculpidasenacrilico",
     "title": "Esculpidas en Acrilico",
     "modalidad": "presencial",
     "description": "Este curso super COMPLETO consta de 5 modulos. Ideal para principiantes que inicien en esculpido. Tambien podes tomarlo como un muy buen PERFECCIONAMIENTO si no estas conforme con otros cursos que hiciste. Moldes, Frances, Reversa, Baby Boomer, Service, Mantenimiento y mucho más.",
-    "price": 60000
+    "price": 60000,
+    "temario": [
+      {
+        "modulo": "modulo 1",
+        "descripcion": "Diferencias entre productos y cabinas que hay en el mercado para saber cual elegir a la hora de realizar un trabajo profesional."
+      },
+      {
+        "modulo": "modulo 2",
+        "descripcion": "Correcta preparacion de las uñas naturales, como realizar una buena adherencia del producto y no dañarlas."
+      },
+      {
+        "modulo": "modulo 3",
+        "descripcion": "Correcta preparacion de las uñas naturales, como realizar una buena adherencia del producto y no dañarlas."
+      }
+    ]
   },
   {
+    "id": "esculpidasenpolyel",
     "title": "Esculpidas en Polygel",
     "modalidad": "presencial",
     "description": "aprenderás todos los conocimientos fundamentales para dominar la técnica de esculpido con Polygel, una alternativa fácil de trabajar que te permitirá ofrecer servicios de extensión y kapping con excelentes resultados.",
+    "temario": [
+      {
+        "modulo": "Modulo 1",
+        "descripcion": "Diferencias entre productos y cabinas que hay en el mercado para saber cual elegir a la hora de realizar un trabajo profesional."
+      },
+      {
+        "modulo": "Modulo 2",
+        "descripcion": "Correcta preparacion de las uñas naturales, como realizar una buena adherencia del producto y no dañarlas."
+      },
+      {
+        "modulo": "Modulo 3",
+        "descripcion": "Correcta preparacion de las uñas naturales, como realizar una buena adherencia del producto y no dañarlas."
+      }
+    ],
     "price": 50000
   },
   {
+    "id": "materiales",
     "title": "Mis materiales",
     "modalidad": "Online",
     "description": " Aprenderas a utilizar las herramientas basicas, tecnicas y mucho mas",
+    "temario": [
+      {
+        "modulo": "Modulo 1",
+        "descripcion": "Diferencias entre productos y cabinas que hay en el mercado para saber cual elegir a la hora de realizar un trabajo profesional."
+      },
+      {
+        "modulo": "Modulo 2",
+        "descripcion": "Correcta preparacion de las uñas naturales, como realizar una buena adherencia del producto y no dañarlas."
+      },
+      {
+        "modulo": "Modulo 3",
+        "descripcion": "Correcta preparacion de las uñas naturales, como realizar una buena adherencia del producto y no dañarlas."
+      }
+    ],
     "price": 10000
   }
 ]

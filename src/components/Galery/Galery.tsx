@@ -1,55 +1,90 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useState } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import styles from "./galery.module.css";
 import ImageModal from "@/components/ModalGalery/ModalGalery";
+import SkeletonGalery from "../SkeletonGalery/SkeletonGalery";
 
-export default function Galery({
-  data,
-}: {
-  data: { media_url: string; id: string }[];
-}) {
+interface Servicio {
+  timestamp: string;
+  media_url: string;
+  id: number;
+}
+
+export default function Galery() {
+  const [data, setData] = useState<Servicio[]>([]);
+  const [loading, setLoading] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const api = process.env.NEXT_PUBLIC_API_GALERY;
 
-  const openModal = (index: number) => {
-    setSelectedIndex(index);
-  };
-
-  const closeModal = () => {
-    setSelectedIndex(null);
-  };
-
-  const nextImage = () => {
-    if (selectedIndex !== null) {
-      setSelectedIndex((prevIndex) => (prevIndex! + 1) % data.length);
+  const fetchData = useCallback(async () => {
+    if (!api) {
+      console.error("La URL de la API no está definida.");
+      return;
     }
-  };
-
-  const prevImage = () => {
-    if (selectedIndex !== null) {
-      setSelectedIndex((prevIndex) =>
-        prevIndex === 0 ? data.length - 1 : prevIndex! - 1
-      );
+    try {
+      const response = await fetch(api);
+      const result = await response.json();
+      setData(result.data || []);
+    } catch (error) {
+      console.error("Error al obtener los datos de la API:", error);
+    } finally {
+      setLoading(false);
     }
-  };
+  }, [api]);
 
-  if (data.length === 0) {
-    return <p>No hay fotos disponibles</p>;
-  }
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
+  console.log(data);
+
+  const openModal = useCallback((index: number) => setSelectedIndex(index), []);
+  const closeModal = useCallback(() => setSelectedIndex(null), []);
+
+  const nextImage = useCallback(() => {
+    setSelectedIndex((prevIndex) =>
+      prevIndex !== null ? (prevIndex + 1) % data.length : null
+    );
+  }, [data.length]);
+
+  const prevImage = useCallback(() => {
+    setSelectedIndex((prevIndex) =>
+      prevIndex !== null
+        ? prevIndex === 0
+          ? data.length - 1
+          : prevIndex - 1
+        : null
+    );
+  }, [data.length]);
+
+  const renderSkeletons = useMemo(
+    () =>
+      Array.from({ length: 12 }, (_, index) => (
+        <SkeletonGalery key={index} index={index} />
+      )),
+    []
+  );
+
+  const renderGallery = useMemo(
+    () =>
+      data.map((galery, index) => (
+        <div
+          key={galery.id}
+          className={styles.galeriaItem}
+          onClick={() => openModal(index)}
+        >
+          <img src={galery.media_url} alt={`Galería ${galery.id}`} />
+        </div>
+      )),
+    [data, openModal]
+  );
 
   return (
     <div className={styles.galeria}>
       <h2>Galería</h2>
       <section className={styles.galeriaContenedor}>
-        {data.map((galery, index) => (
-          <div
-            key={index}
-            className={styles.galeriaItem}
-            onClick={() => openModal(index)}
-          >
-            <img src={galery.media_url} alt={`Galería ${galery.id}`} />
-          </div>
-        ))}
+        {loading ? renderSkeletons : renderGallery}
       </section>
 
       {selectedIndex !== null && (

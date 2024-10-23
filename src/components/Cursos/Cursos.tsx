@@ -13,7 +13,7 @@ export default function Cursos() {
               <p>{curso.modalidad}</p>
               <h2>{curso.title}</h2>
             </div>
-            <Link href={`/cursos/${curso.title}`}>Mas Informacion</Link>
+            <Link href={`/cursos/${curso.id}`}>Mas Informacion</Link>
           </article>
         ))}
       </div>

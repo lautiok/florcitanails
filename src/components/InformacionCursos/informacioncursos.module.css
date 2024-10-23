@@ -1,0 +1,46 @@
+.informacioncurso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title h2 {
+  font-size: 1.3rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.information p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.temario {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.temario h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.temario p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}

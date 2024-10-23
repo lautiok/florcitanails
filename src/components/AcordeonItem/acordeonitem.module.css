@@ -1,0 +1,35 @@
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.accordionItem {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordionContent {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.isOpen {
+  transition: max-height 0.3s ease-in;
+  max-height: 1000px;
+}
+
+.accordionContent p {
+  margin: 10px 0;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}

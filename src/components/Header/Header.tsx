@@ -31,7 +31,7 @@ export default function Header() {
         </ul>
       </nav>
       <button className={styles.button}>
-        <Link href="/plataforma">Plataforma</Link>
+        <Link href="/auth/login">Plataforma</Link>
       </button>
     </header>
   );
