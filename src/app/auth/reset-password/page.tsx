@@ -1,11 +1,10 @@
 import MainLayout from "@/app/mainLayout";
-import ResetPassword from "@/components/ResetPassword/ResetPassword";
 
 export default function Page() {
   return (
     <MainLayout>
       <main>
-        <ResetPassword />
+        <h1>proximamente</h1>
       </main>
     </MainLayout>
   );
