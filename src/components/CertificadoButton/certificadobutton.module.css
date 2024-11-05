@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.certificado {
+  width: 850px;
+  height: 620px;
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.miniCertificado {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+}
+
+.mini .title {
+  font-size: 1.5rem;
+}
+
+.mini .logo {
+  width: 60px; /* Reducir el tamaño del logo */
+}
+
+.mini .name {
+  font-size: 18px;
+}
+
+.mini .description,
+.mini .date,
+.mini .subtitle {
+  font-size: 14px;
+}
+
+.signatureSection {
+  margin-top: 50px;
+  font-size: 16px;
+  color: #555;
+  font-family: "Georgia", serif;
+}
+
+/* Ocultar el botón de descarga */
+.downloadButton {
+  display: none;
+}

@@ -1,0 +1,30 @@
+.certificados {
+  display: flex;
+  flex-direction: column;
+}
+
+.certificadoContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.certificadoContainer a {
+  text-decoration: none;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #94d7c5;
+  color: black;
+  transition: all 0.1s ease-in-out;
+}
+
+.certificadoContainer a:hover {
+  background-color: #6ec6a8;
+}
+
+@media screen and (max-width: 450px) {
+  .certificadoContainer {
+    align-items: center;
+  }
+}

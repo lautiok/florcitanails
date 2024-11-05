@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   width: 68%;
   gap: 1rem;
+  font-family: var(--font-poppins);
 }
 
 .cursos h1 {

@@ -1,0 +1,7 @@
+Plataforma de cursos. 
+
+Sistema de autenticación con next-auth.
+
+se realizo el registro de usuarios en la base de datos mongodb y la password se codifica con bcrypt.
+el login se realiza con el metodo de email y password usando next-auth.
+

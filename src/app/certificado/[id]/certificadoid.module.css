@@ -1,8 +1,7 @@
-.plataforma {
+.certificado {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   font-family: var(--font-poppins);
 }

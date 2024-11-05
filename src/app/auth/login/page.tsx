@@ -1,9 +1,12 @@
+import MainLayout from "@/app/mainLayout";
 import Login from "@/components/Login/Login";
 
 export default function Page() {
   return (
-    <main>
-      <Login />
-    </main>
+    <MainLayout>
+      <main>
+        <Login />
+      </main>
+    </MainLayout>
   );
 }

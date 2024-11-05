@@ -2,9 +2,9 @@ import style from "./cursos.module.css";
 import data from "../../data/cursos.json";
 import Link from "next/link";
 
-export default function Cursos() {
+export default function Cursos({ width = "68%" }) {
   return (
-    <section className={style.cursos}>
+    <section className={style.cursos} style={{ width }}>
       <h1>Nuestros cursos</h1>
       <div className={style.contenedorCard}>
         {data.map((curso, index) => (

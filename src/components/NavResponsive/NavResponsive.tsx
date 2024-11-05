@@ -49,11 +49,11 @@ export const NavResponsive = () => {
           </ul>
         </nav>
         <Link
-          href="/plataforma"
+          href="/dashboard"
           className={styles.loginResponsive}
           onClick={toggleNav}
         >
-          Iniciar Sesión
+          Plataforma
         </Link>
       </div>
     </div>

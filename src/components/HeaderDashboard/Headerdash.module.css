@@ -1,0 +1,58 @@
+.headerDash {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+  border-bottom: 4px solid #f4dfe2;
+  font-family: var(--font-poppins);
+}
+
+.sectionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.menu {
+  position: relative;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  height: auto;
+  background-color: #f4dfe2;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.userName {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.logoutButton {
+  padding: 1rem;
+  background-color: #f4dfe2;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 8rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  border-top: 2px solid #ffffff;
+}
+
+@media screen and (max-width: 450px) {
+  .headerDash {
+    padding: 0rem;
+  }
+}

@@ -37,8 +37,6 @@ export default function Galery() {
     fetchData();
   }, [fetchData]);
 
-  console.log(data);
-
   const openModal = useCallback((index: number) => setSelectedIndex(index), []);
   const closeModal = useCallback(() => setSelectedIndex(null), []);
 

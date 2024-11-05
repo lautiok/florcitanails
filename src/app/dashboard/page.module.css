@@ -1,0 +1,23 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-family: var(--font-poppins);
+}
+
+.dashboardPage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboardPage h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 450px) {
+  .dashboardPage {
+    align-items: center;
+  }
+}
