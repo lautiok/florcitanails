@@ -1,20 +1,23 @@
 "use client";
-import { resetSchema } from "@/validations/resetSchema";
-import style from "./resetpassword.module.css";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useState } from "react";
+import { resetSchema } from "@/validations/resetSchema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import style from "./resetpassword.module.css";
 
 export default function ResetPassword() {
   const router = useRouter();
   const [errorform, setErrorform] = useState<string | null>(null);
+  const [token, setToken] = useState<string | null>(null);
   const { register, handleSubmit } = useForm({
     resolver: zodResolver(resetSchema),
   });
 
   const params = useSearchParams();
-  const token = params.get("token");
+  useEffect(() => {
+    setToken(params.get("token"));
+  }, [params]);
 
   const handleSendEmail = handleSubmit(async (data) => {
     try {
