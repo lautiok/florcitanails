@@ -9,11 +9,7 @@ import { useState } from "react";
 export default function ResetPassword() {
   const router = useRouter();
   const [errorform, setErrorform] = useState<string | null>(null);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
+  const { register, handleSubmit } = useForm({
     resolver: zodResolver(resetSchema),
   });
 
