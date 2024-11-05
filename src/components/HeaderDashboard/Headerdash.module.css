@@ -6,6 +6,11 @@
   font-family: var(--font-poppins);
 }
 
+.headerDash h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .sectionButtons {
   display: flex;
   align-items: center;
@@ -54,5 +59,11 @@
 @media screen and (max-width: 450px) {
   .headerDash {
     padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .headerDash h2 {
+    display: none;
   }
 }

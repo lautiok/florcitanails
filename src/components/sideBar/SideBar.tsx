@@ -16,10 +16,10 @@ export default function SideBar() {
         <li>
           <Link href="/dashboard">Inicio</Link>
         </li>
+
         <li>
           <Link href="/dashboard/cursos">Cursos</Link>
         </li>
-        <li>Mis Cursos</li>
         {session?.user?.role === "user" && (
           <li>
             <Link href="/dashboard/certificado">Certificados</Link>

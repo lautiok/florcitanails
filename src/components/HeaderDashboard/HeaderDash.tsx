@@ -40,6 +40,7 @@ export default function HeaderDash() {
   return (
     <header className={style.headerDash}>
       <SidebarResponsive user={session?.user} />
+      <h2>{pageName}</h2>
       <section className={style.sectionButtons}>
         {pageName === "certificados" && session?.user.role === "admin" && (
           <Link href="/dashboard/certificados/agregar">

@@ -1,8 +1,6 @@
 .certificados {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .certificadoContainer {
@@ -10,8 +8,6 @@
   gap: 1rem;
   margin-top: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .certificadoContainer a {
@@ -28,7 +24,11 @@
 }
 
 @media screen and (max-width: 450px) {
+  .certificados {
+    text-align: center;
+  }
   .certificadoContainer {
+    justify-content: center;
     align-items: center;
   }
 }
