@@ -8,6 +8,7 @@ import SkeletonGalery from "../SkeletonGalery/SkeletonGalery";
 interface Servicio {
   timestamp: string;
   media_url: string;
+  media_type: string;
   id: number;
 }
 
@@ -72,7 +73,21 @@ export default function Galery() {
           className={styles.galeriaItem}
           onClick={() => openModal(index)}
         >
-          <img src={galery.media_url} alt={`Galería ${galery.id}`} />
+          {galery.media_type === "VIDEO" ? (
+            <video
+              src={galery.media_url}
+              muted
+              autoPlay
+              loop
+              className={styles.media}
+            />
+          ) : (
+            <img
+              src={galery.media_url}
+              alt={`Galería ${galery.id}`}
+              className={styles.media}
+            />
+          )}
         </div>
       )),
     [data, openModal]
@@ -89,6 +104,7 @@ export default function Galery() {
         <ImageModal
           imageUrl={data[selectedIndex].media_url}
           imageAlt={`Galería ${data[selectedIndex].id}`}
+          isVideo={data[selectedIndex].media_type === "VIDEO"}
           onClose={closeModal}
           onNext={nextImage}
           onPrev={prevImage}

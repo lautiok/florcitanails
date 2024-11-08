@@ -9,18 +9,35 @@
   padding: 1rem;
   border-radius: 1rem;
   font-family: var(--font-poppins);
-  justify-content: flex-end; /* Posiciona todos los elementos hacia abajo */
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.ultimoServicio h2,
+.ultimoServicio p {
+  position: relative;
+  z-index: 1;
+  color: #fff;
 }
 
 .ultimoServicio h2 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #fff;
 }
 
 .ultimoServicio p {
   font-size: 0.9rem;
-  color: #fff;
 }
 
 @media screen and (max-width: 1360px) {

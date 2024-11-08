@@ -6,6 +6,7 @@ import styles from "./modalgalery.module.css";
 interface ImageModalProps {
   imageUrl: string;
   imageAlt: string;
+  isVideo: boolean;
   onClose: () => void;
   onNext: () => void;
   onPrev: () => void;
@@ -14,6 +15,7 @@ interface ImageModalProps {
 export default function ImageModal({
   imageUrl,
   imageAlt,
+  isVideo,
   onClose,
   onNext,
   onPrev,
@@ -34,7 +36,11 @@ export default function ImageModal({
       <button onClick={onPrev} className={styles.prevButton}>
         <MoveLeft />
       </button>
-      <img src={imageUrl} alt={imageAlt} className={styles.modalImage} />
+      {isVideo ? (
+        <video src={imageUrl} controls autoPlay className={styles.modalMedia} />
+      ) : (
+        <img src={imageUrl} alt={imageAlt} className={styles.modalMedia} />
+      )}
       <button onClick={onNext} className={styles.nextButton}>
         <MoveRight />
       </button>

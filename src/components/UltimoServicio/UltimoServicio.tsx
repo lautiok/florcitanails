@@ -2,10 +2,13 @@
 
 import { useEffect, useState, useMemo } from "react";
 import styles from "./ultimoservicio.module.css";
+
 interface Servicio {
   timestamp: string;
   media_url: string;
+  media_type: string; // "IMAGE" or "VIDEO"
 }
+
 export default function UltimoServicio() {
   const [servicio, setServicio] = useState<Servicio[]>([]);
   const [loading, setLoading] = useState(true);
@@ -51,11 +54,23 @@ export default function UltimoServicio() {
     );
   }
 
+  const isVideo = servicio[0].media_type === "VIDEO";
+
   return (
     <div
       className={styles.ultimoServicio}
-      style={{ backgroundImage: `url(${servicio[0].media_url})` }}
+      style={{
+        backgroundImage: isVideo ? "none" : `url(${servicio[0].media_url})`,
+      }}
     >
+      {isVideo && (
+        <video
+          src={servicio[0].media_url}
+          autoPlay
+          muted
+          className={styles.videoBackground}
+        />
+      )}
       <h2>Último Servicio</h2>
       <p>
         {day} de {month}
