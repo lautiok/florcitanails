@@ -64,7 +64,6 @@ export default function Galery() {
       )),
     []
   );
-
   const renderGallery = useMemo(
     () =>
       data.map((galery, index) => (

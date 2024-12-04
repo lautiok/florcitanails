@@ -54,16 +54,19 @@ export default function UltimoServicio() {
     );
   }
 
-  const isVideo = servicio[0].media_type === "VIDEO";
+  const isVideo = servicio.length > 0 && servicio[0].media_type === "VIDEO";
 
   return (
     <div
       className={styles.ultimoServicio}
       style={{
-        backgroundImage: isVideo ? "none" : `url(${servicio[0].media_url})`,
+        backgroundImage:
+          !isVideo && servicio.length > 0
+            ? `url(${servicio[0].media_url})`
+            : "none",
       }}
     >
-      {isVideo && (
+      {isVideo && servicio.length > 0 && (
         <video
           src={servicio[0].media_url}
           autoPlay
