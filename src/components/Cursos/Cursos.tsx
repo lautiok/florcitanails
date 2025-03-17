@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import style from "./cursos.module.css";
 import axios from "axios";
+import { useSession } from "next-auth/react";
 
 interface Curso {
   title: string;
@@ -11,6 +12,7 @@ interface Curso {
 
 export default function Cursos({ width = "68%" }) {
   const [data, setData] = useState<Curso[]>([]);
+  const { data: session } = useSession();
 
   const fetchData = async () => {
     try {
@@ -46,9 +48,9 @@ export default function Cursos({ width = "68%" }) {
               <p>{curso.modalidad}</p>
               <h2>{curso.title}</h2>
             </div>
-            <div className={style.buttonDelete}>
+            { session?.user.role === "admin" && (
               <button onClick={() => handleDelete(curso._id)}>Eliminar</button>
-            </div>
+            )}
           </article>
         ))}
       </div>
