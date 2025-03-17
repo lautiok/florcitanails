@@ -3,9 +3,9 @@ import { connectDB } from "../../../utils/mongodb";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
-  const { name, dni, curso } = await req.json();
+  const { name, dni, curso, fecha } = await req.json();
 
-  if (!name || !dni || !curso) {
+  if (!name || !dni || !curso || !fecha) {
     return NextResponse.json(
       { error: "Faltan datos obligatorios" },
       { status: 400 }
@@ -37,6 +37,7 @@ export async function POST(req: Request) {
       name,
       dni,
       curso,
+      fecha,
     });
 
     const savedCertificado = await certificado.save();

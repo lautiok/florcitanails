@@ -132,3 +132,13 @@
   border-bottom: 2px solid;
   border-right: 2px solid;
 }
+
+.deleteButton {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff5454d7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

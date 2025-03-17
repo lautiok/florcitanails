@@ -20,6 +20,7 @@ export default function Certificados() {
     try {
       axios.get("/api/certificate").then((response) => {
         setCertificate(response.data);
+        console.log(response.data);
       });
     } catch (error) {
       console.log(error);

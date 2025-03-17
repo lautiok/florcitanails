@@ -2,15 +2,19 @@
 import React, { useRef } from "react";
 import html2canvas from "html2canvas";
 import styles from "./certificado.module.css";
+import { useSession } from "next-auth/react";
 
 interface CertificadoProps {
   nombre: string;
   curso: string;
   fecha: string;
+  id : string;
 }
 
-const Certificado: React.FC<CertificadoProps> = ({ nombre, curso, fecha }) => {
+const Certificado: React.FC<CertificadoProps> = ({ nombre, curso, fecha, id }) => {
   const certificadoRef = useRef<HTMLDivElement>(null);
+  const { data: session } = useSession();
+
 
   const handleDownload = async () => {
     if (certificadoRef.current) {
@@ -22,6 +26,20 @@ const Certificado: React.FC<CertificadoProps> = ({ nombre, curso, fecha }) => {
       link.click();
     }
   };
+
+  const DelateCertificado = async () => {
+    if (session?.user?.role === "admin") {
+      const response = await fetch(`/api/certificate/${id}`, {
+        method: "DELETE",
+      });
+      if (response.ok) {
+        location.href = "/dashboard/certificados";
+
+      } else {
+        alert("Error al eliminar el certificado");
+      }
+    }
+  }
 
   return (
     <div key="certificado" className={styles.container}>
@@ -43,6 +61,13 @@ const Certificado: React.FC<CertificadoProps> = ({ nombre, curso, fecha }) => {
       <button onClick={handleDownload} className={styles.downloadButton}>
         Descargar Certificado
       </button>
+
+      {session?.user?.role === "admin" && (
+        <button onClick={DelateCertificado} className={styles.deleteButton}>
+          Eliminar Certificado
+        </button>
+      )}
+
     </div>
   );
 };

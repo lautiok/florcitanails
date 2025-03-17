@@ -1,8 +1,41 @@
+"use client";
+import { useState, useEffect } from "react";
 import style from "./cursos.module.css";
-import data from "../../data/cursos.json";
-import Link from "next/link";
+import axios from "axios";
+
+interface Curso {
+  title: string;
+  modalidad: string;
+  _id: string;
+}
 
 export default function Cursos({ width = "68%" }) {
+  const [data, setData] = useState<Curso[]>([]);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("/api/curso");
+      setData(response.data);
+    } catch (error) {
+      console.error("Error fetching data: ", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const handleDelete = async (id: string) => {
+    try {
+      const response = await axios.delete(`/api/curso/${id}`);
+      if (response.status === 200) {
+        fetchData();
+      }
+    } catch (error) {
+      console.error("Error deleting data: ", error);
+    }
+  };
+
   return (
     <section className={style.cursos} style={{ width }}>
       <h1>Nuestros cursos</h1>
@@ -13,7 +46,9 @@ export default function Cursos({ width = "68%" }) {
               <p>{curso.modalidad}</p>
               <h2>{curso.title}</h2>
             </div>
-            <Link href={`/cursos/${curso.id}`}>Mas Informacion</Link>
+            <div className={style.buttonDelete}>
+              <button onClick={() => handleDelete(curso._id)}>Eliminar</button>
+            </div>
           </article>
         ))}
       </div>

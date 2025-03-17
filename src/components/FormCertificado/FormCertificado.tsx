@@ -2,12 +2,12 @@
 import { useForm } from "react-hook-form";
 import style from "./agregar.module.css";
 import Select, { SingleValue } from "react-select";
-import data from "@/data/cursos.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function FormCertificado() {
   const { register, handleSubmit } = useForm();
+  const [data, setData] = useState<{ title: string }[]>([]);
   const [cursoSeleccionado, setCursoSeleccionado] = useState<{
     label: string;
     value: string;
@@ -20,6 +20,7 @@ export default function FormCertificado() {
         name: data.name,
         dni: data.dni,
         curso: cursoSeleccionado?.value,
+        fecha : data.fecha,
       });
       if (response.status === 200) {
         location.href = "/dashboard/certificados";
@@ -29,6 +30,19 @@ export default function FormCertificado() {
       console.error("Error enviando datos" + error);
     }
   });
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("/api/curso");
+      setData(response.data);
+    } catch (error) {
+      console.error("Error fetching data: ", error);
+    }
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <div className={style.CardContainer}>
@@ -55,6 +69,8 @@ export default function FormCertificado() {
             }
             placeholder="Selecciona un curso"
           />
+
+          <input type="date" {...register("fecha")} />
 
           <button type="submit">ENVIAR</button>
         </form>

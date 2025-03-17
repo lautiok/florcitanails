@@ -97,3 +97,18 @@
     align-self: center;
   }
 }
+
+.buttonDelete button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonDelete button:hover {
+  background-color: #ff4d4d;
+}
+
+

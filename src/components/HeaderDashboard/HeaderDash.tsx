@@ -47,6 +47,11 @@ export default function HeaderDash() {
             <CirclePlus size="30" />
           </Link>
         )}
+        {pageName === "cursos" && session?.user.role === "admin" && (
+          <Link href="/dashboard/cursos/agregar">
+            <CirclePlus size="30" />
+          </Link>
+        )}
         <div className={style.menu} onClick={handleToggleMenu} ref={menuRef}>
           <User size="30" />
           {isMenuOpen && (

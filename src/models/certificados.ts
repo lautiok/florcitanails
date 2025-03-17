@@ -21,8 +21,12 @@ const certificadosSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  fecha : {
+    type: Date,
+    required: true,
+  },
 });
 
-certificadosSchema.index({ name: 1, dni: 1, curso: 1 }, { unique: true });
+certificadosSchema.index({ name: 1, dni: 1, curso: 1,}, { unique: true });
 
 export default models.Certificados || model("Certificados", certificadosSchema);
