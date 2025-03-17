@@ -23,6 +23,8 @@ export default function Cursos({ width = "68%" }) {
     }
   };
 
+  console.log(session);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -49,7 +51,9 @@ export default function Cursos({ width = "68%" }) {
               <h2>{curso.title}</h2>
             </div>
             { session?.user.role === "admin" && (
+              <div className={style.buttonDelete}>
               <button onClick={() => handleDelete(curso._id)}>Eliminar</button>
+            </div>
             )}
           </article>
         ))}
