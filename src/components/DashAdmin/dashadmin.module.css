@@ -1,0 +1,155 @@
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 108%;
+    gap: 1rem;
+    font-family: var(--font-poppins);
+  }
+  
+  .cursos h1 {
+    font-size: 1.2rem;
+  }
+  
+  .contenedorCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .contenedorCard article {
+    padding: 1rem;
+    width: 350px;
+    height: 180px;
+    background-color: #94d7c5;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; 
+  }
+  
+  .contenedorCard .articleb {
+    padding: 1rem;
+    width: 350px;
+    height: 180px;
+    background-color: #F4DFE2;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; 
+  } 
+
+  .contenedorCard article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .contenedorCard article div h2 {
+    font-size: 1.2rem;
+  }
+
+    .contenedorCard article p {
+        font-size: 1.5rem;
+    }
+  
+  .contenedorCard article a {
+    align-self: flex-end;
+    font-weight: 600;
+  }
+
+  .contenedorTable {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    width: 50%;
+  }
+
+  .tableHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid #F4DFE2;
+  }
+
+  .contenedorTable table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+  
+
+  
+  .contenedorTable td {
+    padding: 0.75rem;
+    border-bottom: 2px solid #a3d9b1;
+  }
+  
+  .contenedorTable tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  @media screen and (max-width: 884px) {
+    .cursos {
+      gap: 1rem;
+      width: 90%;
+    }
+    .contenedorCard article {
+      gap: 2rem;
+      width: 500px;
+  
+      height: auto;
+    }
+  
+    .contenedorCard article div h2 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 490px) {
+    .cursos {
+      width: 99%;
+      text-align: center;
+    }
+  
+    .contenedorCard {
+      justify-content: center;
+    }
+  
+    .contenedorCard article {
+      gap: 0;
+      width: 90%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contenedorCard article div h2 {
+      font-size: 1rem;
+    }
+  
+    .contenedorCard article div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0rem;
+    }
+  
+    .contenedorCard article p {
+      font-size: 0.7rem;
+    }
+  
+    .contenedorCard article a {
+      font-size: 0.8rem;
+      align-self: center;
+    }
+  }
+  
+  
