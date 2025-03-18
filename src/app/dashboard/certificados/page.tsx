@@ -4,6 +4,7 @@ import HeaderLayout from "../headerLayour";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import style from "./certificados.module.css";
+import { useSession } from "next-auth/react";
 
 interface Certificate {
   _id: string;
@@ -15,6 +16,7 @@ interface Certificate {
 
 export default function Certificados() {
   const [certificate, setCertificate] = useState<Certificate[]>([]);
+  const { data: session } = useSession();
 
   useEffect(() => {
     try {
@@ -26,6 +28,14 @@ export default function Certificados() {
       console.log(error);
     }
   }, []);
+
+  if (session?.user.role !== "admin") {
+    return <HeaderLayout><h1>Acceso denegado</h1></HeaderLayout>;
+  }
+
+
+
+
 
   return (
     <HeaderLayout>
