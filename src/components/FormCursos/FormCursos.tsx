@@ -4,6 +4,7 @@ import style from "./formcursos.module.css";
 import Select, { SingleValue } from "react-select";
 import { useState } from "react";
 import axios from "axios";
+import { useSession } from "next-auth/react";
 
 export default function FormCurso() {
   const { register, handleSubmit } = useForm();
@@ -13,6 +14,12 @@ export default function FormCurso() {
   } | null>(null);
 
   const [error, setError] = useState<string>("");
+  const { data: session } = useSession();
+
+  if (session?.user.role !== "admin") {
+    return <h1>Acceso denegado</h1>;
+  }
+
 
   const handleSendEmail = handleSubmit(async (data) => {
     try {
