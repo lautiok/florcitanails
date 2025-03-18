@@ -33,11 +33,9 @@ export default function CertificadoContainer() {
 
   console.log(certificado);
 
-  const fecha = new Date(certificado.fecha);
-  const dia = fecha.getDate();
-  const mes = fecha.getMonth() + 1;
-  const anio = fecha.getFullYear();
-  const fechaCertificado = `${dia}/${mes}/${anio}`;
+  const [year, month, day] = certificado.fecha.split("T")[0].split("-");
+  const fechaCertificado = `${day}/${month}/${year}`;
+  
 
   return (
     <section>
