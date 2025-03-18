@@ -8,6 +8,7 @@
   flex-direction: column;
   gap: 10px;
   font-family: var(--font-poppins);
+  border-right: 2px solid #F4DFE2;
 }
 
 .logo {
