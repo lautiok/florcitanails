@@ -18,10 +18,6 @@ export default function FormCertificado() {
   const [error, setError] = useState<string>("");
   const { data: session } = useSession();
 
-  if (session?.user.role !== "admin") {
-    return <h1>Acceso denegado</h1>;
-  }
-
   const handleSendEmail = handleSubmit(async (data) => {
     try {
       const response = await axios.post("/api/certificate", {
@@ -51,6 +47,12 @@ export default function FormCertificado() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  
+  if (session?.user.role !== "admin") {
+    return <h1>Acceso denegado</h1>;
+  }
+
 
   return (
     <div className={style.CardContainer}>
