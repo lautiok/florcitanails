@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import style from "./cursos.module.css";
 import axios from "axios";
 import { useSession } from "next-auth/react";
+import { Trash2 } from "lucide-react";
 
 interface Curso {
   title: string;
@@ -52,7 +53,9 @@ export default function Cursos({ width = "68%" }) {
             </div>
             { session?.user.role === "admin" && (
               <div className={style.buttonDelete}>
-              <button onClick={() => handleDelete(curso._id)}>Eliminar</button>
+              <button onClick={() => handleDelete(curso._id)}>
+              <Trash2 size={24} />
+              </button>
             </div>
             )}
           </article>

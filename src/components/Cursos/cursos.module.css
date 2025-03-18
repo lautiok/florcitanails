@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  position: relative;
 }
 
 .contenedorCard article div {
@@ -41,6 +42,29 @@
   align-self: flex-end;
   font-weight: 600;
 }
+.buttonDelete button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.buttonDelete button:hover {
+  background-color: #ff4d4d;
+}
+
+
+
+
 
 @media screen and (max-width: 884px) {
   .cursos {
@@ -97,18 +121,4 @@
     align-self: center;
   }
 }
-
-.buttonDelete button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.buttonDelete button:hover {
-  background-color: #ff4d4d;
-}
-
 
