@@ -12,6 +12,7 @@ export default function Page() {
   return (
     <HeaderLayout>
       <section className={style.dashboardPage}>
+        <h2>Hola { session?.user.name }</h2>
         <Cursos width="100%" />
         {session?.user?.role === "user" && <SectionCertificados />}
       </section>
