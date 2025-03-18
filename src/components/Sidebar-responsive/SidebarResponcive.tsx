@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./sidebarresponcive.module.css";
+import { CircleX } from "lucide-react";
 
 interface User {
   role: string;
@@ -22,7 +23,7 @@ export const SidebarResponsive = ({ user }: { user?: User }) => {
       </button>
       <div className={`${styles.navR} ${showNav ? styles.navRShow : ""}`}>
         <button className={styles.closeBtn} onClick={toggleNav}>
-          X
+        <CircleX  size={28}/>
         </button>
         <nav className={styles.navResponsive}>
           <ul className={styles.navUl}>

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./navresponsive.module.css";
+import { CircleX } from "lucide-react";
 
 export const NavResponsive = () => {
   const [showNav, setShowNav] = useState<boolean>(false);
@@ -17,7 +18,7 @@ export const NavResponsive = () => {
       </button>
       <div className={`${styles.navR} ${showNav ? styles.navRShow : ""}`}>
         <button className={styles.closeBtn} onClick={toggleNav}>
-          X
+        <CircleX size={28} />
         </button>
         <nav className={styles.navResponsive}>
           <ul className={styles.navUl}>
