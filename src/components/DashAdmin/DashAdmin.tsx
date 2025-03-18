@@ -89,9 +89,7 @@ export default function DashAdmin({ width = "100%" }) {
       <div className={style.contenedorTable}>
         <header className={style.tableHeader}>
           <h2>Usuarios disponibles</h2>
-          <Link href="/dashboard/usuarios">
-            <CirclePlus />
-          </Link>
+
         </header>
         <table>
             
