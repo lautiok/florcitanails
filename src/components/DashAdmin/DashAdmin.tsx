@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "./dashadmin.module.css";
 import axios from "axios";
-import Link from "next/link";
-import { CirclePlus } from "lucide-react";
+
 
 interface Certificate {
   _id: string;
