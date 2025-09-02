@@ -8,12 +8,17 @@
   flex-direction: column;
   gap: 10px;
   font-family: var(--font-poppins);
-  border-right: 2px solid #F4DFE2;
+  border-right: 2px solid #f4dfe2;
 }
 
 .logo {
   display: flex;
   align-items: center;
+}
+
+.logo img {
+  height: 150px;
+  width: auto;
 }
 
 .sidebar ul {

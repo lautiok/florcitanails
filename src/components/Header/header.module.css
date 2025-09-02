@@ -5,6 +5,11 @@
   font-family: var(--font-poppins);
 }
 
+.logo img {
+  height: 150px;
+  width: auto;
+}
+
 .nav ul {
   display: flex;
   gap: 1rem;
